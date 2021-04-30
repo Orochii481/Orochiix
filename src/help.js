@@ -100,7 +100,7 @@ ____██_____██
 ║🐍 *${prefix}setdesc*
 ║🐍 *${prefix}opengc*
 ║🐍 *${prefix}linkgp*
-║🐍 *${prefix}nomeg(gc)*
+║🐍 *${prefix}nomegp(gc)*
 ║
 ╠══🐰〘 ESPECIFICO DO BOT 〙🐰══
 ║
@@ -115,8 +115,6 @@ ____██_____██
 ║🐍 *${prefix}pinterest (nome)*
 ║🐍 *${prefix}desligar (so para o dono)*
 ║🐍 *${prefix}timer*
-║🐍 *${prefix}punheteiros*
-║🐍 *${prefix}gados*
 ║
 ╠══🐰〘 MAIS ALGUNS 〙🐰══
 ║
@@ -177,9 +175,8 @@ ____██_____██
 ╠══🐰〘 NO CONTROLE 〙🐰══
 ║
 ║ *NOME: OROCHII*
-║ *WPP: wa.me/+55
 ║
-║  *"base do lindo (DARK BOT 4.0)🐍🚩*
+║  *"base do (DARK BOT 4.0)🐍🚩*
 ║  *"kiba não xereka"*
 ║  *Número do dark: wa.me/+5522996215481
 ║
