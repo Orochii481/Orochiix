@@ -52,7 +52,7 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'Causs bot'; 
+const BotName = 'OROCHII'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
@@ -770,46 +770,7 @@ if (text.includes("placa"))
 						reply('❌ *ERRO* ❌')
 					}
 					break
-                     case 'punheteiros':
-						membr = []
-						const suamae1 = groupMembers
-						const suamae2 = groupMembers
-						const suamae3 = groupMembers
-						const suamae4 = groupMembers
-						const suamae5 = groupMembers
-						const teupai1 = suamae1[Math.floor(Math.random() * suamae1.length)]
-						const teupai2 = suamae2[Math.floor(Math.random() * suamae2.length)]
-						const teupai3 = suamae3[Math.floor(Math.random() * suamae3.length)]
-						const teupai4 = suamae4[Math.floor(Math.random() * suamae4.length)]
-						const teupai5 = suamae5[Math.floor(Math.random() * suamae5.length)]
-						teks = `*TOP CINCO MAIS PUNHETEIROS*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
-						membr.push(teupai1.jid)
-						membr.push(teupai2.jid)
-						membr.push(teupai3.jid)
-						membr.push(teupai4.jid)
-						membr.push(teupai5.jid)
-						mentions(teks, membr, true)
-					break
-					case 'gados':
-						membr = []
-						const suamae1= groupMembers
-						const suamae2 = groupMembers
-						const suamae3 = groupMembers
-						const suamae4 = groupMembers
-						const suamae5 = groupMembers
-						const teupai1 = suamae1[Math.floor(Math.random() * suamae1.length)]
-						const teupai2 = suamae2[Math.floor(Math.random() * suamae2.length)]
-						const teupai3 = suamae3[Math.floor(Math.random() * suamae3.length)]
-						const teupai4 = suamae4[Math.floor(Math.random() * suamae4.length)]
-						const teupai5 = suamae5[Math.floor(Math.random() * suamae5.length)]
-						teks = `*TOP CINCO MAIS GADOS*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
-						membr.push(teupai1.jid)
-						membr.push(teupai2.jid)
-						membr.push(teupai3.jid)
-						membr.push(teupai4.jid)
-						membr.push(teupai5.jid)
-						mentions(teks, membr, true)
-					break
+                     
 					case 'lista':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('Você quem é o proprietário?')
