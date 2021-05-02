@@ -109,6 +109,8 @@ __██_____██
 ║🐍 *${prefix}testime*
 ║🐍 *${prefix}antilink [1/0]*
 ║🐍 *${prefix}antiracismo [on/off]*
+║🐍 *${prefix}tsticker*
+║🐍 *${prefix}calculadora*
 ║
 ╠══🐰〘 ESPECIFICO DO BOT 〙🐰══
 ║
@@ -139,7 +141,6 @@ __██_____██
 ║🐍 *bv*
 ║🐍 *canta ai bot*
 ║🐍 *grita*
-║🐍 *causs*
 ║🐍 *gemidao*
 ║🐍 *musica*
 ║
