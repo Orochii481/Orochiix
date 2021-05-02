@@ -6,11 +6,11 @@ const help = (prefix) => {
 
 __█████████  ● ᏴϴͲ●ᎷᎬΝႮ●         
 __█▄█████▄█   *DONO* OROCHII
-__█▼▼▼▼▼█ 
+__█▼▼▼▼▼▼▼█ 
 _██ᏴϴͲ Ꮩ3.8██▌ 
-__█▲▲▲▲▲█ 
+__█▲▲▲▲▲▲▲█
 __█████████ 
-____██_____██
+__██_____██
 
 ┌─────────❶.❷────────
 ║〘 INFORMAÇÕES 〙
@@ -21,20 +21,17 @@ ____██_____██
 ╠🐉 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ║
-╠══🐰〘 MENU 〙🐰══
+╠══🐰〘 DONO 〙🐰══
 ║
-║🐍 *${prefix}figu*
-║🐍 *${prefix}toimg*
-║🐍 *${prefix}tts*
-║🐍 *${prefix}lolih [on]*
-║🐍 *${prefix}nsfwloli [off]*
-║🐍 *${prefix}url2img*
-║🐍 *${prefix}leens [na legenda]*
-║🐍 *${prefix}wait [na legenda]*
 ║🐍 *${prefix}setprefix*
+║🐍 *${prefix}bc*
+║🐍 *${prefix}setppbot*
+║🐍 *${prefix}desligar (so para o dono)*
+║🐍 *${prefix}clonar [@]*
+║🐍 *${prefix}setnomebot*
 ║
 ╠══🐰〘 IMAGENS 〙🐰══
-
+║
 ║🐍 *${prefix}boanoite*
 ║🐍 *${prefix}bomdia*
 ║🐍 *${prefix}boatarde
@@ -50,7 +47,6 @@ ____██_____██
 ║
 ║🐍 *${prefix}simih 1 (para ativar)*
 ║🐍 *${prefix}simih 0 (para desativar)*
-║ *${prefix}simi (sua mensagem)*
 ║
 ╠══🐰〘 EM PRODUÇÃO 〙🐰══
 ║
@@ -101,40 +97,23 @@ ____██_____██
 ║🐍 *${prefix}opengc*
 ║🐍 *${prefix}linkgp*
 ║🐍 *${prefix}nomegp(gc)*
+║🐍 *${prefix}fig*
+║🐍 *${prefix}toimg*
+║🐍 *${prefix}bixas*
+║🐍 *${prefix}gados*
+║🐍 *${prefix}punheteiros*
+║🐍 *${prefix}gay [@]*
+║🐍 *${prefix}tts*
+║🐍 *${prefix}pinterest (nome)*
+║🐍 *${prefix}ttp [texto]*
+║🐍 *${prefix}testime*
+║🐍 *${prefix}antilink [1/0]*
+║🐍 *${prefix}antiracismo [on/off]*
 ║
 ╠══🐰〘 ESPECIFICO DO BOT 〙🐰══
 ║
-║🐍 *${prefix}bug [sua mensagem]*
-║🐍 *${prefix}clonar [@]*
 ║🐍 *${prefix}ping [ver velocidade do bot]*
-║🐍 *${prefix}termux*
-║🐍 *${prefix}gay [@]*
-║🐍 *${prefix}wame*
-║🐍 *${prefix}map (nome)*
-║🐍 *${prefix}setppbot (marque uma img)*
-║🐍 *${prefix}pinterest (nome)*
-║🐍 *${prefix}desligar (so para o dono)*
 ║🐍 *${prefix}timer*
-║
-╠══🐰〘 MAIS ALGUNS 〙🐰══
-║
-║🐍 *${prefix}neko*
-║🐍 *${prefix}ttp [texto]*
-║🐍 *${prefix}testime*
-║🐍 *${prefix}tomp3*
-║🐍 *${prefix}modoanime [on/off]*
-║🐍 *${prefix}modonsfw [on/off]*
-║🐍 *${prefix}happymod [jogo/app]*
-║🐍 *${prefix}rize*
-║🐍 *${prefix}ytsearch*
-║🐍 *${prefix}moddroid [jogo/app]*
-║🐍 *${prefix}gay1*
-║🐍 *${prefix}next*
-║🐍 *${prefix}alerta*
-║🐍 *${prefix}pronomeneu [texto]*
-║🐍 *${prefix}hobby*
-║🐍 *${prefix}kiss
-║🐍 *${prefix}analise
 ║
 ╠══🐰〘 COMANDOS DE VOZ 〙🐰══
 ║
@@ -148,14 +127,6 @@ ____██_____██
 ║🐍 *${prefix}beat1*
 ║🐍 *${prefix}glub*
 ║🐍 *${prefix}causs*
-║
-╠══🐰〘 OUTROS /2 〙🐰══
-║
-║🐍 *${prefix}antilink [1/0]*
-║🐍 *${prefix}brainly [pergunta]*
-║🐍 *${prefix}antiracismo [on/off]*
-║🐍 *${prefix}setnomebot*
-║🐍 *${prefix}meme*
 ║
 ╠══🐰〘 INTERATIVOS 〙🐰══
 ║
@@ -177,7 +148,6 @@ ____██_____██
 ║ *NOME: OROCHII*
 ║
 ║  *"base do (DARK BOT 4.0)🐍🚩*
-║  *"kiba não xereka"*
 ║  *Número do dark: wa.me/+5522996215481
 ║
 ╚═〘 §OROCHII§〙`
