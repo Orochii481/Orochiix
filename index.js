@@ -756,6 +756,66 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+					case 'punheteiros':
+						membr = []
+						const suamae1 = groupMembers
+						const suamae2 = groupMembers
+						const suamae3 = groupMembers
+						const suamae4 = groupMembers
+						const suamae5 = groupMembers
+						const teupai1 = suamae1[Math.floor(Math.random() * suamae1.length)]
+						const teupai2 = suamae2[Math.floor(Math.random() * suamae2.length)]
+						const teupai3 = suamae3[Math.floor(Math.random() * suamae3.length)]
+						const teupai4 = suamae4[Math.floor(Math.random() * suamae4.length)]
+						const teupai5 = suamae5[Math.floor(Math.random() * suamae5.length)]
+						teks = `*TOP CINCO MAIS PUNHETEIROS*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
+						membr.push(teupai1.jid)
+						membr.push(teupai2.jid)
+						membr.push(teupai3.jid)
+						membr.push(teupai4.jid)
+						membr.push(teupai5.jid)
+						mentions(teks, membr, true)
+					break
+					case 'gados':
+						membr = []
+						const oi1 = groupMembers
+						const oi2 = groupMembers
+						const oi3 = groupMembers
+						const oi4 = groupMembers
+						const oi5 = groupMembers
+						const t1 = oi1[Math.floor(Math.random() * oi1.length)]
+						const t2 = oi2[Math.floor(Math.random() * oi2.length)]
+						const t3 = oi3[Math.floor(Math.random() * oi3.length)]
+						const t4 = oi4[Math.floor(Math.random() * oi4.length)]
+						const t5 = oi5[Math.floor(Math.random() * oi5.length)]
+						teks = `*TOP CINCO MAIS GADOS🐮*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
+						membr.push(t1.jid)
+						membr.push(t2.jid)
+						membr.push(t3.jid)
+						membr.push(t4.jid)
+						membr.push(t5.jid)
+						mentions(teks, membr, true)
+					break
+					case 'bixas':
+						membr = []
+						const s1 = groupMembers
+						const s2 = groupMembers
+						const s3 = groupMembers
+						const s4 = groupMembers
+						const s5 = groupMembers
+						const te1 = s1[Math.floor(Math.random() * s1.length)]
+						const te2 = s2[Math.floor(Math.random() * s2.length)]
+						const te3 = s3[Math.floor(Math.random() * s3.length)]
+						const te4 = s4[Math.floor(Math.random() * s4.length)]
+						const te5 = s5[Math.floor(Math.random() * s5.length)]
+						teks = `*ESSES SÃO OS 5 MAIS BIXAS💅🤭*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
+						membr.push(teupai1.jid)
+						membr.push(teupai2.jid)
+						membr.push(teupai3.jid)
+						membr.push(teupai4.jid)
+						membr.push(teupai5.jid)
+						mentions(teks, membr, true)
+					break
 					case 'kiss':
 				    try {    
 					
