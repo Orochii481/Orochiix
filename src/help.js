@@ -6,9 +6,9 @@ const help = (prefix) => {
 
 __█████████  ● ᏴϴͲ●ᎷᎬΝႮ●         
 __█▄█████▄█   *DONO* OROCHII
-__█▼▼▼▼▼▼▼█ 
-_██ᏴϴͲ Ꮩ3.8██▌ 
-__█▲▲▲▲▲▲▲█
+__█▼▼▼▼▼▼█ 
+_██ᏴϴͲ Ꮩ4.0██▌ 
+__█▲▲▲▲▲▲█
 __█████████ 
 __██_____██
 
@@ -16,10 +16,8 @@ __██_____██
 ║〘 INFORMAÇÕES 〙
 ║
 ╠🐉 *§OROCHII§* 
-╠🐉 𝐃𝐎𝐍𝐎:  ⃬⃗OROCHII(base dark) 
+╠🐉 𝐃𝐎𝐍𝐎:  ⃬⃗OROCHII
 ╠🐉 *wa.me/+5547992091566*
-╠🐉 𝐒𝐓𝐀𝐓𝐔𝐒: ON
-║
 ║
 ╠══🐰〘 DONO 〙🐰══
 ║
@@ -34,13 +32,13 @@ __██_____██
 ║
 ║🐍 *${prefix}boanoite*
 ║🐍 *${prefix}bomdia*
-║🐍 *${prefix}boatarde
+║🐍 *${prefix}boatarde*
 ║🐍 *${prefix}rize [aleatórias]*
 ║🐍 *${prefix}minato [aleatórias]*
 ║🐍 *${prefix}boruto [aleatórias]*
 ║🐍 *${prefix}sasuke [aleatórias]*
 ║🐍 *${prefix}sakura [aleatórias]*
-║🐍 *${prefix}naruto [aleatórias]*
+║🐍 *${prefix}kurumi*
 ║🐍 *${prefix}meme*  
 ║
 ╠══🐰〘 INTELIGÊNCIA 〙🐰══
@@ -55,7 +53,6 @@ __██_____██
 ║🐍 *${prefix}gtts loli*
 ║🐍 *${prefix}hidegp*
 ║🐍 *${prefix}grupos*
-║🐍 *${prefix}antilink*
 ║🐍 *${prefix}it 1/0
 ║
 ╠══🐰〘 SÓ PREMIUM 〙🐰══
@@ -96,7 +93,7 @@ __██_____██
 ║🐍 *${prefix}setdesc*
 ║🐍 *${prefix}opengc*
 ║🐍 *${prefix}linkgp*
-║🐍 *${prefix}nomegp(gc)*
+║🐍 *${prefix}nomegp*
 ║🐍 *${prefix}fig*
 ║🐍 *${prefix}toimg*
 ║🐍 *${prefix}bixas*
@@ -109,8 +106,6 @@ __██_____██
 ║🐍 *${prefix}testime*
 ║🐍 *${prefix}antilink [1/0]*
 ║🐍 *${prefix}antiracismo [on/off]*
-║🐍 *${prefix}tsticker*
-║🐍 *${prefix}calculadora*
 ║
 ╠══🐰〘 ESPECIFICO DO BOT 〙🐰══
 ║
@@ -148,8 +143,6 @@ __██_____██
 ║
 ║ *NOME: OROCHII*
 ║
-║  *"base do (DARK BOT 4.0)🐍🚩*
-║  *Número do dark: wa.me/+5522996215481
 ║
 ╚═〘 §OROCHII§〙`
 }
