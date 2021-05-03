@@ -24,7 +24,7 @@ __██_____██
 ║🐍 *${prefix}setprefix*
 ║🐍 *${prefix}bc*
 ║🐍 *${prefix}setppbot*
-║🐍 *${prefix}desligar (so para o dono)*
+║🐍 *${prefix}desligar 
 ║🐍 *${prefix}clonar [@]*
 ║🐍 *${prefix}setnomebot*
 ║
