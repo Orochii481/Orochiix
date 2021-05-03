@@ -63,7 +63,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '.','!','#'
 blocked = []
 limitawal = '999999999'
-cr = '*Causs*'
+cr = '*Orochii*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -288,11 +288,11 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD CAUSS BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD Orochii BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Causs? Este é um recurso especial para o Causs ❌',
-					ownerB: '[❗] Causs? Este é um recurso especial para o Causs ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de CAUSS. Registre-se para fazer amizade com o bot Causs por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
+					ownerG: '[❗] Orochii? Este é um recurso especial para o Orochii ❌',
+					ownerB: '[❗] Orochii? Este é um recurso especial para o Orochii ❌',
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de Orochii. Registre-se para fazer amizade com o bot Causs por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Causs|17\n\n──「 CAUSS BOT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
@@ -303,7 +303,7 @@ async function starts() {
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554792091566@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["554792091566@s.whatsapp.net","558296156440@s.whatsapp.net"] 
+			const premium = ["554792091566@s.whatsapp.net","5511952761206@s.whatsapp.net","5511942016192@s.whatsapp.net","5521994195262@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -788,7 +788,7 @@ if (text.includes("placa"))
 						const t3 = oi3[Math.floor(Math.random() * oi3.length)]
 						const t4 = oi4[Math.floor(Math.random() * oi4.length)]
 						const t5 = oi5[Math.floor(Math.random() * oi5.length)]
-						teks = `*TOP CINCO MAIS GADOS🐮*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
+						teks = `*TOP CINCO MAIS GADOS🐮*\n\n1= ${t1.jid.split('@')[0]}\n2= ${t2.jid.split('@')[0]}\n3= ${t3.jid.split('@')[0]}\n4= ${t4.jid.split('@')[0]}\n5= ${t5.jid.split('@')[0]}`
 						membr.push(t1.jid)
 						membr.push(t2.jid)
 						membr.push(t3.jid)
@@ -798,22 +798,22 @@ if (text.includes("placa"))
 					break
 					case 'bixas':
 						membr = []
-						const s1 = groupMembers
-						const s2 = groupMembers
-						const s3 = groupMembers
-						const s4 = groupMembers
-						const s5 = groupMembers
-						const te1 = s1[Math.floor(Math.random() * s1.length)]
-						const te2 = s2[Math.floor(Math.random() * s2.length)]
-						const te3 = s3[Math.floor(Math.random() * s3.length)]
-						const te4 = s4[Math.floor(Math.random() * s4.length)]
-						const te5 = s5[Math.floor(Math.random() * s5.length)]
-						teks = `*ESSES SÃO OS 5 MAIS BIXAS💅🤭*\n\n1= ${teupai1.jid.split('@')[0]}\n2= ${teupai2.jid.split('@')[0]}\n3= ${teupai3.jid.split('@')[0]}\n4= ${teupai4.jid.split('@')[0]}\n5= ${teupai5.jid.split('@')[0]}`
-						membr.push(teupai1.jid)
-						membr.push(teupai2.jid)
-						membr.push(teupai3.jid)
-						membr.push(teupai4.jid)
-						membr.push(teupai5.jid)
+						const f1 = groupMembers
+						const f2 = groupMembers
+						const f3 = groupMembers
+						const f4 = groupMembers
+						const f5 = groupMembers
+						const v1 = f1[Math.floor(Math.random() * f1.length)]
+						const v2 = f2[Math.floor(Math.random() * f2.length)]
+						const v3 = f3[Math.floor(Math.random() * f3.length)]
+						const v4 = f4[Math.floor(Math.random() * f4.length)]
+						const v5 = f5[Math.floor(Math.random() * f5.length)]
+						teks = `*ESSES SÃO OS 5 MAIS BIXAS💅🤭*\n\n1= ${v1.jid.split('@')[0]}\n2= ${v2.jid.split('@')[0]}\n3= ${v3.jid.split('@')[0]}\n4= ${v4.jid.split('@')[0]}\n5= ${v5.jid.split('@')[0]}`
+						membr.push(v1.jid)
+						membr.push(v2.jid)
+						membr.push(v3.jid)
+						membr.push(v4.jid)
+						membr.push(v5.jid)
 						mentions(teks, membr, true)
 					break
 					case 'kiss':
@@ -1710,7 +1710,7 @@ if (text.includes("placa"))
 				case 'delete':
 				case 'del':
 				case 'd':  
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário para adquirir o acesso Premium!' ,text, { quoted: mek })
 					if (!isGroup)return reply(mess.only.group)
 					if (!isGroupAdmins)return reply(mess.only.admin)
 					client.deleteMessage(from, { id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true })
