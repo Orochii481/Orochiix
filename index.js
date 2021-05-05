@@ -303,7 +303,7 @@ async function starts() {
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554792091566@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["554792091566@s.whatsapp.net","5511952761206@s.whatsapp.net","5511942016192@s.whatsapp.net","5521994195262@s.whatsapp.net","5548988249167@s.whatsapp.net"] 
+			const premium = ["5511952761206@s.whatsapp.net","5511942016192@s.whatsapp.net","5521994195262@s.whatsapp.net","5548988249167@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -779,7 +779,7 @@ if (text.includes("placa"))
 					membr.push(cornos5.jid)
 					mentions(teks, membr, true)
 					break
-					case 'gays':
+					case 'cornos':
 					if (!isGroup) return reply(`Esse comando so pode ser usado em grupos parsa`)
 					membr = []
 					const gay1 = groupMembers
