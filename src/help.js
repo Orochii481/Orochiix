@@ -33,7 +33,7 @@ __██_____██
 ║🐍 *${prefix}boanoite*
 ║🐍 *${prefix}bomdia*
 ║🐍 *${prefix}boatarde*
-║🐍 *${prefix}rize [aleatórias]*
+║🐍 *${prefix}miku*
 ║🐍 *${prefix}minato [aleatórias]*
 ║🐍 *${prefix}boruto [aleatórias]*
 ║🐍 *${prefix}sasuke [aleatórias]*
