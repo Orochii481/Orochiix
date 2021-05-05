@@ -95,8 +95,8 @@ __██_____██
 ║🐍 *${prefix}linkgp*
 ║🐍 *${prefix}f*
 ║🐍 *${prefix}toimg*
-║🐍 *${prefix}bixas*
-║🐍 *${prefix}gados*
+║🐍 *${prefix}gays*
+║🐍 *${prefix}cornos*
 ║🐍 *${prefix}punheteiros*
 ║🐍 *${prefix}gay [@]*
 ║🐍 *${prefix}tts*
