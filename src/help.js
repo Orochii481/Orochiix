@@ -24,7 +24,7 @@ __██_____██
 ║🐍 *${prefix}setprefix*
 ║🐍 *${prefix}bc*
 ║🐍 *${prefix}setppbot*
-║🐍 *${prefix}desligar 
+║🐍 *${prefix}desligar*
 ║🐍 *${prefix}clonar [@]*
 ║🐍 *${prefix}setnomebot*
 ║
@@ -93,8 +93,7 @@ __██_____██
 ║🐍 *${prefix}setdesc*
 ║🐍 *${prefix}opengc*
 ║🐍 *${prefix}linkgp*
-║🐍 *${prefix}nomegp*
-║🐍 *${prefix}fig*
+║🐍 *${prefix}f*
 ║🐍 *${prefix}toimg*
 ║🐍 *${prefix}bixas*
 ║🐍 *${prefix}gados*
@@ -122,8 +121,6 @@ __██_____██
 ║🐍 *${prefix}fdp*
 ║🐍 *${prefix}onich*
 ║🐍 *${prefix}beat1*
-║🐍 *${prefix}glub*
-║🐍 *${prefix}causs*
 ║
 ╠══🐰〘 INTERATIVOS 〙🐰══
 ║
