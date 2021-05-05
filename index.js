@@ -756,7 +756,7 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
-					case 'cornos':
+					case 'gays':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
 					const corno1 = groupMembers
@@ -770,8 +770,8 @@ if (text.includes("placa"))
 					const cornos4 = corno4[Math.floor(Math.random() * corno4.length)]
 					const cornos5 = corno5[Math.floor(Math.random() * corno5.length)]
 					var porcentagemcorno = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `O chifre desse ai bate na lua ksksksk`]
-					const porcentagemr = porcentagemcorno[Math.floor(Math.random() * porcentagemcorno.length)]
-					teks = `${pushname} Esses são os cornos do grupo ${groupName}\n@${cornos1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemr}\n@${cornos2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemr}\n@${cornos3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemr}\n@${cornos4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemr}\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemr}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
+					const porcentagemc = porcentagemcorno[Math.floor(Math.random() * porcentagemcorno.length)]
+					teks = `${pushname} Esses são os gays do grupo ${groupName}\n@${cornos1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
 					membr.push(cornos1.jid)
 					membr.push(cornos2.jid)
 					membr.push(cornos3.jid)
@@ -792,9 +792,9 @@ if (text.includes("placa"))
 					const gays3 = corno3[Math.floor(Math.random() * gay3.length)]
 					const gays4 = corno4[Math.floor(Math.random() * gay4.length)]
 					const gays5 = corno5[Math.floor(Math.random() * gay5.length)]
-					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `KKKKKKKK ESSA AQUI É MUITO GAY`]
-					const porcentagemg = porcentagemgay[Math.floor(Math.random() * porcentagemcorno.length)]
-					teks = `${pushname} Esses são os mais gays do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemg}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemg}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemg}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemg}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemg}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
+					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `KKKKKKKK ESSE AQUI É MUITO GAY`]
+					const porcentagemgays = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
+					teks = `${pushname} Esses são os mais cornos do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
 					membr.push(gays1.jid)
 					membr.push(gays2.jid)
 					membr.push(gays3.jid)
@@ -815,9 +815,9 @@ if (text.includes("placa"))
 					const ps3 = p3[Math.floor(Math.random() * p3.length)]
 					const ps4 = p4[Math.floor(Math.random() * p4.length)]
 					const ps5 = p5[Math.floor(Math.random() * p5.length)]
-					var porcentagempunhetero = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `ta pega meno quantas por dia?`]
-					const porcentagemc = porcentagempunhetero[Math.floor(Math.random() * porcentagempunhetero.length)]
-					teks = `${pushname} Esses são os mais punheteiros👉👌 do grupo ${groupName}\n@${ps1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${ps2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${ps3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${ps4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${ps5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
+					var porcentagempunheteiro = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `ta pega meno quantas por dia?`]
+					const porcentagemps = porcentagempunheteiro[Math.floor(Math.random() * porcentagempunheteiro.length)]
+					teks = `${pushname} Esses são os mais punheteiros👉👌 do grupo ${groupName}\n@${ps1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
 					membr.push(ps1.jid)
 					membr.push(ps2.jid)
 					membr.push(ps3.jid)
