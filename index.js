@@ -676,9 +676,9 @@ if (text.includes("placa"))
 			reply("bora juntos?")
 	}
 	
-		if (messagesC.includes("cadebot")){
+		if (messagesC.includes("vlw")){
 			client.updatePresence(from, Presence.composing)
-			reply("olha eu aqui carai")
+			reply("Q isso lek tmj")
 	}
 	
 		if (messagesC.includes("bot")){
@@ -756,7 +756,44 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+					 case 'casal':
+					if (!isGroup) return reply(mess.only.group)
+						membr = []
+						const suamae11 = groupMembers
+						const suamae21 = groupMembers
+						const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
+						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
+						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
+						teks = `*Hmmm.... Eu Shipo eles 2💘💘*\n\n1= @${teupai11.jid.split('@')[0]}\ne esse\n2= @${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
+						membr.push(teupai11.jid)
+						membr.push(teupai21.jid)
+						mentions(teks, membr, true)
+					break
 					case 'gays':
+					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
+					membr = []
+					const gay1 = groupMembers
+					const gay2 = groupMembers
+					const gay3 = groupMembers
+					const gay4 = groupMembers
+					const gay5 = groupMembers
+					const gays1 = gay1[Math.floor(Math.random() * gay1.length)]
+					const gays2 = gay2[Math.floor(Math.random() * gay2.length)]
+					const gays3 = gay3[Math.floor(Math.random() * gay3.length)]
+					const gays4 = gay4[Math.floor(Math.random() * gay4.length)]
+					const gays5 = gay5[Math.floor(Math.random() * gay5.length)]
+					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+					const porcentagem = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
+					teks = `${pushname} Esses são os mais SuperGays do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n\n Sem pressão Neném, ⚡Orochii⚡ ta aqui`
+					membr.push(gays1.jid)
+					membr.push(gays2.jid)
+					membr.push(gays3.jid)
+					membr.push(gays4.jid)
+					membr.push(gays5.jid)
+					mentions(teks, membr, true)
+					break
+					case 'cornos':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
 					const corno1 = groupMembers
@@ -771,7 +808,7 @@ if (text.includes("placa"))
 					const cornos5 = corno5[Math.floor(Math.random() * corno5.length)]
 					var porcentagemcorno = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `O chifre desse ai bate na lua ksksksk`]
 					const porcentagemc = porcentagemcorno[Math.floor(Math.random() * porcentagemcorno.length)]
-					teks = `${pushname} Esses são os gays do grupo ${groupName}\n@${cornos1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
+					teks = `${pushname} Esses são os cornos do grupo ${groupName}\n@${cornos1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n@${cornos5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemc}\n\n Sem pressão Neném, ⚡Orochii⚡ ta aqui`
 					membr.push(cornos1.jid)
 					membr.push(cornos2.jid)
 					membr.push(cornos3.jid)
@@ -779,51 +816,50 @@ if (text.includes("placa"))
 					membr.push(cornos5.jid)
 					mentions(teks, membr, true)
 					break
-					case 'cornos':
-					if (!isGroup) return reply(`Esse comando so pode ser usado em grupos parsa`)
+					case 'punheteiros':
+					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
-					const gay1 = groupMembers
-					const gay2 = groupMembers
-					const gay3 = groupMembers
-					const gay4 = groupMembers
-					const gay5 = groupMembers
-					const gays1 = corno1[Math.floor(Math.random() * gay1.length)]
-					const gays2 = corno2[Math.floor(Math.random() * gay2.length)]
-					const gays3 = corno3[Math.floor(Math.random() * gay3.length)]
-					const gays4 = corno4[Math.floor(Math.random() * gay4.length)]
-					const gays5 = corno5[Math.floor(Math.random() * gay5.length)]
-					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `KKKKKKKK ESSE AQUI É MUITO GAY`]
-					const porcentagemgays = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
-					teks = `${pushname} Esses são os mais cornos do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemgays}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
-					membr.push(gays1.jid)
-					membr.push(gays2.jid)
-					membr.push(gays3.jid)
-					membr.push(gays4.jid)
-					membr.push(gays5.jid)
+					const punhe1 = groupMembers
+					const punhe2 = groupMembers
+					const punhe3 = groupMembers
+					const punhe4 = groupMembers
+					const punhe5 = groupMembers
+					const punhet1 = punhe1[Math.floor(Math.random() * punhe1.length)]
+					const punhet2 = punhe2[Math.floor(Math.random() * punhe2.length)]
+					const punhet3 = punhe3[Math.floor(Math.random() * punhe3.length)]
+					const punhet4 = punhe4[Math.floor(Math.random() * punhe4.length)]
+					const punhet5 = punhe5[Math.floor(Math.random() * punhe5.length)]
+					var porcentagempunhe = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `bate tanto q deu ERRO`]
+					const porcentagemp = porcentagempunhe[Math.floor(Math.random() * porcentagempunhe.length)]
+					teks = `${pushname} Esses são os cornos do grupo ${groupName}\n@${punhet1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemp}\n@${punhet2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemp}\n@${punhet3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemp}\n@${punhet4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemp}\n@${punhet5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemp}\n\n Sem pressão Neném, ⚡Orochii⚡ ta aqui`
+					membr.push(punhet1.jid)
+					membr.push(punhet2.jid)
+					membr.push(punhet3.jid)
+					membr.push(punhet4.jid)
+					membr.push(punhet5.jid)
 					mentions(teks, membr, true)
 					break
-					case 'punheteiros':
-					if (!isGroup) return reply(`Esse comando so pode ser usado em grupos parsa`)
-					membr = []
-					const p1 = groupMembers
-					const p2 = groupMembers
-					const p3 = groupMembers
-					const p4 = groupMembers
-					const p5 = groupMembers
-					const ps1 = p1[Math.floor(Math.random() * p1.length)]
-					const ps2 = p2[Math.floor(Math.random() * p2.length)]
-					const ps3 = p3[Math.floor(Math.random() * p3.length)]
-					const ps4 = p4[Math.floor(Math.random() * p4.length)]
-					const ps5 = p5[Math.floor(Math.random() * p5.length)]
-					var porcentagempunheteiro = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `ta pega meno quantas por dia?`]
-					const porcentagemps = porcentagempunheteiro[Math.floor(Math.random() * porcentagempunheteiro.length)]
-					teks = `${pushname} Esses são os mais punheteiros👉👌 do grupo ${groupName}\n@${ps1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n@${ps5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagemps}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
-					membr.push(ps1.jid)
-					membr.push(ps2.jid)
-					membr.push(ps3.jid)
-					membr.push(ps4.jid)
-					membr.push(ps5.jid)
-					mentions(teks, membr, true)
+					case 'hidetag':
+					// Fix Case By FDL
+                 if (!isRegistered) return reply( ind.noregis())
+					if (isLimit(sender)) return reply(ind.limitend(pusname))
+				if (isBanned) return reply('pronto!')
+					if (!isGroup) return reply(ind.groupo())
+					if (!isGroupAdmins) return reply(ind.admin())
+					var value = body.slice(9)
+					var group = await client.groupMetadata(from)
+					var member = group['participants']
+					var mem = []
+					member.map( async adm => {
+					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+					})
+					var options = {
+					text: value,
+					contextInfo: { mentionedJid: mem },
+					quoted: mek
+					}
+					client.sendMessage(from, options, text)
+					await limitAdd(sender)
 					break
 					case 'kiss':
 				    try {    
