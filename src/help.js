@@ -24,7 +24,7 @@ __██_____██
 ║🐍 *${prefix}setprefix*
 ║🐍 *${prefix}bc*
 ║🐍 *${prefix}setppbot*
-║🐍 *${prefix}desligar*
+║🐍 *${prefix}hidetag*
 ║🐍 *${prefix}clonar [@]*
 ║🐍 *${prefix}setnomebot*
 ║
@@ -102,7 +102,7 @@ __██_____██
 ║🐍 *${prefix}tts*
 ║🐍 *${prefix}pinterest (nome)*
 ║🐍 *${prefix}ttp [texto]*
-║🐍 *${prefix}testime*
+║🐍 *${prefix}casal*
 ║🐍 *${prefix}antilink [1/0]*
 ║🐍 *${prefix}antiracismo [on/off]*
 ║
