@@ -840,27 +840,10 @@ if (text.includes("placa"))
 					mentions(teks, membr, true)
 					break
 					case 'hidetag':
-					// Fix Case By FDL
-                 if (!isRegistered) return reply( ind.noregis())
-					if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (isBanned) return reply('pronto!')
-					if (!isGroup) return reply(ind.groupo())
-					if (!isGroupAdmins) return reply(ind.admin())
-					var value = body.slice(9)
-					var group = await client.groupMetadata(from)
-					var member = group['participants']
-					var mem = []
-					member.map( async adm => {
-					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
-					})
-					var options = {
-					text: value,
-					contextInfo: { mentionedJid: mem },
-					quoted: mek
-					}
-					client.sendMessage(from, options, text)
-					await limitAdd(sender)
-					break
+                if (!isOwner && !itsMe) return await reply('Apenas Meu Dono')
+                if (!isAdmin && !isOwner && !itsMe) return await reply('Só pode ser usado por admin!!!')
+                await wa.hideTag(from, args.join(" "))
+                break
 					case 'kiss':
 				    try {    
 					
