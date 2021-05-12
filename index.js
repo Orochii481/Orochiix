@@ -824,7 +824,7 @@ if (text.includes("placa"))
                       const gostosa11 = groupMembers
                       const gostoso12 = gostosa12[Math.floor(Math.random() * gostosa12.length)]
                       const gostoso11 = gostosa11[Math.floor(Math.random() * gostosa11.length)]
-                      reply(`*ＤＥＴＥＣＴＯＲ   ＤＥ  ＧＯＳＴＯＳＡＳ👩‍⚕️*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${gostoso11.jid.split('@')[0]} @${gostoso12.jid.split('@')[0]} *PARADA(O)S AÍ🖐*\n\n*VOCÊ ACABA DE RECEBER DUAS MULTAS*\n\n*1 por não dar bom dia,boa tarde,boa noite e outra por ser muito*\n\n*gostosa(o)*\n\n*valor da multa:*\n*kkkkk*`)
+                      reply(`*ＤＥＴＥＣＴＯＲ   ＤＥ  ＧＯＳＴＯＳＡＳ👩‍⚕️*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${gostoso11.jid.split('@')[0]} @${gostoso12.jid.split('@')[0]} *PARADA(O)S AÍ🖐*\n\n*VOCÊ ACABA DE RECEBER DUAS MULTAS*\n\n*1 por não dar bom dia,boa tarde,boa noite e outra por ser muito*\n\n*gostosa(o)*\n\n*valor da multa:*\n*uma fotinha 😏*`)
                       membr.push(gostosa11.jid)
                       membr.push(gostosa12.jid)
                       mentions(teks, membr, true)
