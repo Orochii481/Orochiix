@@ -749,9 +749,7 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 			case 'menu':
-                    putagg = await getBuffer(`https://i.ibb.co/s2WLnrM/Orochimaru-3.jpg`)
-                    client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
-                    break
+                  client.sendMessage(from, help(pushname,prefix), text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "*OROCHII*", 'jpegThumbnail': fs.readFileSync('./assets/botlogo.webp')}}}})
 				case 'help1':
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
