@@ -750,7 +750,7 @@ if (text.includes("placa"))
 				case 'help':
 				case 'menu':		
 			putagg = await getBuffer(`https://i.ibb.co/s2WLnrM/Orochimaru-3.jpg`)                    
-		client.sendMessage(from, putagg, image, {quoted: mek, caption: help(pushname,prefix)})
+		 client.sendMessage(from, help(pushname,prefix), text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }
 		break	
 			case 'help1':
 				case 'menu1':
