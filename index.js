@@ -748,9 +748,7 @@ if (text.includes("placa"))
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'do leke', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			switch(command) {
 				case 'help':
-				case 'menu':
-			me=client.user 
-                    uptime=process.uptime		
+				case 'menu':		
 			putagg = await getBuffer(`https://i.ibb.co/s2WLnrM/Orochimaru-3.jpg`)                    
 		client.sendMessage(from, putagg, image, {quoted: mek, caption: help(pushname,prefix)})
 		break	
