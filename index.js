@@ -749,8 +749,8 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 				case 'menu':		
-			putagg = await getBuffer(`https://i.ibb.co/s2WLnrM/Orochimaru-3.jpg`)                    
-			client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
+			case 'menu':                    putagg = await getBuffer(`https://i.ibb.co/s2WLnrM/Orochimaru-3.jpg`)                    
+					client.sendMessage(from, putagg, image, {quoted: mek, caption: help(prefix)})
 		break	
 			case 'help1':
 				case 'menu1':
