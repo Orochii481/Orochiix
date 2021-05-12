@@ -750,7 +750,7 @@ if (text.includes("placa"))
 				case 'help':
 				case 'menu':		
 			putagg = await getBuffer(`https://i.ibb.co/s2WLnrM/Orochimaru-3.jpg`)                    
-		 client.sendMessage(from, help(pushname,prefix), text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } :{} ) }
+			client.sendMessage(from, putagg, image, {quoted: mek, caption: help(pushname,prefix)})
 		break	
 			case 'help1':
 				case 'menu1':
@@ -4006,21 +4006,6 @@ break
 						reply('Transmissão enviada')
 					}
 					break
-			case 'casal':
-					if (!isGroup) return reply(mess.only.group)
-						membr = []
-						const suamae11 = groupMembers
-						const suamae21 = groupMembers
-						const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
-						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
-						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
-						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
-						teks = `*Hmmm.... Eu Shipo eles 2💘💘*\n\n1= @${teupai11.jid.split('@')[0]}\ne esse\n2= @${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
-						membr.push(teupai11.jid)
-						membr.push(teupai21.jid)
-						mentions(teks, membr, true)
-		}
-		break
 				case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
