@@ -1,4 +1,4 @@
-const help = (pushname,prefix) => {
+const help = (prefix) => {
 	return `
 <═══════════════════>
       *§OROCHII§*
@@ -92,7 +92,7 @@ __██_____██
 ║🐍 *${prefix}toimg*
 ║🐍 *${prefix}gays*
 ║🐍 *${prefix}cornos*
-║🐍 *${prefix}punheteiros*
+║🐍 *${prefix}gostosa*
 ║🐍 *${prefix}gay [@]*
 ║🐍 *${prefix}tts*
 ║🐍 *${prefix}pinterest (nome)*
