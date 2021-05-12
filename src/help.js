@@ -1,4 +1,4 @@
-const help = (pushname, prefix) => {
+const help = (pushname,prefix) => {
 	return `
 <═══════════════════>
       *§OROCHII§*
@@ -6,16 +6,16 @@ const help = (pushname, prefix) => {
 
 __█████████  ● ᏴϴͲ●ᎷᎬΝႮ●         
 __█▄█████▄█   *DONO* OROCHII
-__█▼▼▼▼▼▼█ 
+__█ ▼ ▼ ▼ ▼ ▼█ 
 _██ᏴϴͲ Ꮩ4.0██▌ 
-__█▲▲▲▲▲▲█
+__█ ▲ ▲ ▲ ▲ ▲█
 __█████████ 
 __██_____██
 
 ┌─────────❶.❷────────
 ║〘 USER 〙
 ║
-╠🐉 *nome:${pushname}*
+╠🐉 nome:${pushname}
 ║
 ╠══🐰〘 DONO 〙🐰══
 ║
@@ -131,7 +131,6 @@ __██_____██
 ║🐍 *bv*
 ║🐍 *canta ai bot*
 ║🐍 *grita*
-║🐍 *gemidao*
 ║🐍 *musica*
 ║
 ╠══🐰〘 NO CONTROLE 〙🐰══
