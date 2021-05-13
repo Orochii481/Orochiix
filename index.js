@@ -348,7 +348,7 @@ async function starts() {
             const checkId = getLevelingId(sender)
             try {
                 if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
-                const amountXp = Math.floor(Math.random() * 10) + 50
+                const amountXp = Math.floor(Math.random() * 10) + 10
                 const requiredXp = 100000 * (Math.pow(2, currentLevel) - 1)
                 const getLevel = getLevelingLevel(sender)
                 addLevelingXp(sender, amountXp)
