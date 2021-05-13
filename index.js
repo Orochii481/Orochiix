@@ -348,8 +348,8 @@ async function starts() {
             const checkId = getLevelingId(sender)
             try {
                 if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
-                const amountXp = Math.floor(Math.random() * 10) + 500
-                const requiredXp = 10000 * (Math.pow(2, currentLevel) - 1)
+                const amountXp = Math.floor(Math.random() * 10) + 50
+                const requiredXp = 100000 * (Math.pow(2, currentLevel) - 1)
                 const getLevel = getLevelingLevel(sender)
                 addLevelingXp(sender, amountXp)
                 if (requiredXp <= getLevelingXp(sender)) {
@@ -458,7 +458,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes("seupreto")){
+	        if (messagesC.includes("seu preto")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
@@ -524,7 +524,7 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes("pretoimundo")){
+	        if (messagesC.includes("preto imundo")){
 		if (!isGroup) return
 		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
@@ -793,6 +793,12 @@ if (text.includes("placa"))
 					membr.push(gays4.jid)
 					membr.push(gays5.jid)
 					mentions(teks, membr, true)
+					break
+					case 'fttp':
+					if (args.length < 0) return reply('Cadê o texto, hum?')
+					var txt = encodeURI(body.slice(7))
+                    anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${txt}`)
+					client.sendMessage( from, anu, sticker, {quoted:mek})
 					break
 					case 'cornos':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
@@ -2785,7 +2791,22 @@ break
 				film = `• Título: *${anu.result.judul}*\n• Resolução: *${anu.result.data.resolusi}*\n• Link Download: *${anu.result.data.urlDownload}*\n`
 				client.sendMessage(from, film, text, {quoted: mek})
 				await limitAdd(sender) 
-					break					
+					break
+					  case 'mining':
+                                        if (isLimit(sender)) return reply(ind.limitend(pushname))
+                                        if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan oleh owner`)
+                                        if (isOwner) {
+                                                const one = 999999999
+                                                addLevelingXp(sender, one)
+                                                addLevelingLevel(sender, 99)
+                                                reply(`porque você é nosso proprietário da equipe bot de envio ${one}Xp para voce`)
+                                        } else {
+                                                const mining = Math.ceil(Math.random() * 10000)
+                                                addLevelingXp(sender, mining)
+                                                await reply(`*Parabéns* ${pushname} você pega *${mining}Xp*`)
+                                        }
+                                        await limitAdd(sender)
+                                        break
 				case 'randomcat':
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/randomcat?apikey=ANTIGRATISNIHANJENKKK`)
