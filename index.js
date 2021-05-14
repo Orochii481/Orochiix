@@ -778,7 +778,43 @@ if (text.includes("placa"))
                         member.push(o5.jid)
                         mentions(teks, member, true)
                                         Break
-					 
+					 case 'amor':
+                if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marque a pessoa')
+				mentidn = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+                ghost = mek.participant
+                const mor =['22','40','45','100','98','99','12','5','0','67','88']
+				const am = mor[Math.floor(Math.random() * mor.length)]
+				rate = body.slice(1)		
+				var kic = `${sender.split("@")[0]}@s.whatsapp.net`		
+		     	 reply(`Fazendo probabilidades`)
+				 data = fs.readFileSync('./assets/shit.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                buffer = await getBuffer(randKey.result)               
+                amor = `${pushname} suas chances de ficar com @${mentidn.split('@')[0]} são de: ${am}%`
+                client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: amor, contextInfo: {mentionedJid: [mentidn]}})
+				break
+					case 'cpaper':
+				cpaper = `${body.slice(8)}`
+				buff = await getBuffer(`https://api.arugaz.my.id/api/photooxy/text-on-burn-paper?text=${cpaper}`, {method: 'get'})
+				client.sendMessage(from, buff, image, {quoted: mek})
+				break
+					case 'addpremium': 
+					client.updatePresence(from, Presence.composing) 
+ 
+					if (args.length < 1) return
+					if (!isOwner) return reply(mess.only.ownerB)
+					premium = args[0]
+					reply(`Comando aceito adicionar usuário premium : ${premium}`)
+					break
+					case 'qrcode':
+        			if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite .Daftarvip para adquirir o acesso Premium!' ,text, { quoted: mek })
+					const tex = encodeURIComponent(body.slice(8))
+					if (!tex) return client.sendMessage(from, 'Digite um texto/url que deseja criar um código qr', text, {quoted: mek})
+					const bufferr = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
+					client.sendMessage(from, bufferr, image, {quoted: mek})
+					break
                                           case 'casal':
 					if (!isGroup) return reply(mess.only.group)
 						membr = []
