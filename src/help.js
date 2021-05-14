@@ -6,9 +6,9 @@ const help = (prefix) => {
 
 __█████████  ● ᏴϴͲ●ᎷᎬΝႮ●         
 __█▄█████▄█   *DONO* OROCHII
-__█ ▼ ▼ ▼ ▼▼█ 
+__█ ▼ ▼ ▼▼▼█ 
 _██ᏴϴͲ Ꮩ4.0██▌ 
-__█ ▲ ▲ ▲ ▲▲█
+__█ ▲ ▲ ▲▲▲█
 __█████████ 
 __██_____██
 
@@ -23,6 +23,8 @@ __██_____██
 ║🐍 *${prefix}clonar [@]*
 ║🐍 *${prefix}setnomebot*
 ║🐍 *${prefix}mining*
+║🐍 *${prefix}addpremium*
+║🐍 *${prefix}totaluser*
 ║
 ╠══🐰〘 IMAGENS 〙🐰══
 ║
@@ -36,20 +38,20 @@ __██_____██
 ║🐍 *${prefix}sakura [aleatórias]*
 ║🐍 *${prefix}kurumi*
 ║🐍 *${prefix}meme*  
+║🐍 *${prefix}itori*
 ║
 ╠══🐰〘 INTELIGÊNCIA 〙🐰══
 ║
 ║🐍 *${prefix}simih 1 (para ativar)*
 ║🐍 *${prefix}simih 0 (para desativar)*
 ║
-╠══🐰〘 EM PRODUÇÃO 〙🐰══
+╠══🐰〘 LOGO 〙🐰══
 ║
-║🐍 *${prefix}gado*
-║🐍 *${prefix}dbz*
-║🐍 *${prefix}gtts loli*
-║🐍 *${prefix}hidegp*
-║🐍 *${prefix}grupos*
-║🐍 *${prefix}it 1/0
+║🐍 *${prefix}cpaper*
+║🐍 
+║🐍 
+║🐍 
+║🐍 
 ║
 ╠══🐰〘 SÓ PREMIUM 〙🐰══
 ║
@@ -82,7 +84,7 @@ __██_____██
 ║🐍 *${prefix}marcar2*
 ║🐍 *${prefix}marcar3*
 ║🐍 *${prefix}bemvindo [1/0]*
-║🐍 *${prefix}grupoinfo*
+║🐍 *${prefix}infogc*
 ║🐍 *${prefix}bomdia*
 ║🐍 *${prefix}boatarde*
 ║🐍 *${prefix}closegc*
@@ -97,10 +99,11 @@ __██_____██
 ║🐍 *${prefix}gay [@]*
 ║🐍 *${prefix}tts*
 ║🐍 *${prefix}pinterest (nome)*
-║🐍 *${prefix}fttp [texto]*
+║🐍 *${prefix}fttp a [texto]*
 ║🐍 *${prefix}casal*
 ║🐍 *${prefix}antilink [1/0]*
 ║🐍 *${prefix}antiracismo [on/off]*
+║🐍 *${prefix}amor [@]*
 ║
 ╠══🐰〘 ESPECIFICO DO BOT 〙🐰══
 ║
