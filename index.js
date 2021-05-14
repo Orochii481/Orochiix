@@ -756,6 +756,28 @@ if (text.includes("placa"))
 				case 'menu1':
 					client.sendMessage(from, help1(prefix), text)
 					break
+					case 'punheteiros':
+      if (!isGroup) return reply(mess.only.group)
+                        member = []
+                        const p1 = groupMembers
+                        const p2 = groupMembers
+                        const p3 = groupMembers
+                        const p4 = groupMembers
+                        const p5 = groupMembers
+                        const o1 = p1[Math.floor(Math.random() * p1.length)]
+                        const o2 = p2[Math.floor(Math.random() * p2.length)]
+                        const o3 = p3[Math.floor(Math.random() * p3.length)]
+                        const o4 = p4[Math.floor(Math.random() * p4.length)]
+                        const o5 = p5[Math.floor(Math.random() * p5.length)]
+                        teks = `
+                  *TOP CINCO ${body.slice(10)}\n\n@${o1.jid.split('@')[0]}👉👌\n\n\n2=👉👌@${o2.jid.split('@')[0]}👉👌\n\n\n3=👉👌@${o3.jid.split('@')[0]}👉👌\n\n\n4=👉👌@${o4.jid.split('@')[0]}👉👌\n\n\n5=👉👌@${o5.jid.split('@')[0]}👉👌\n\n\n👉👌ESSES SAO OS CINCO MAIS PUNHETEIROS DO GRUPO👉👌`
+                        member.push(o1.jid)
+                        member.push(o2.jid)
+                        member.push(o3.jid)
+                        member.push(o4.jid)
+                        member.push(o5.jid)
+                        mentions(teks, member, true)
+                                        Break
 					 
                                           case 'casal':
 					if (!isGroup) return reply(mess.only.group)
@@ -771,35 +793,14 @@ if (text.includes("placa"))
 						membr.push(teupai21.jid)
 						mentions(teks, membr, true)
 					break
-					case 'gays':
-					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
-					membr = []
-					const gay1 = groupMembers
-					const gay2 = groupMembers
-					const gay3 = groupMembers
-					const gay4 = groupMembers
-					const gay5 = groupMembers
-					const gays1 = gay1[Math.floor(Math.random() * gay1.length)]
-					const gays2 = gay2[Math.floor(Math.random() * gay2.length)]
-					const gays3 = gay3[Math.floor(Math.random() * gay3.length)]
-					const gays4 = gay4[Math.floor(Math.random() * gay4.length)]
-					const gays5 = gay5[Math.floor(Math.random() * gay5.length)]
-					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
-					const porcentagem = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
-					teks = `${pushname} Esses são os mais SuperGays do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n\n Sem pressão Neném, ⚡OROCHII⚡ ta aqui`
-					membr.push(gays1.jid)
-					membr.push(gays2.jid)
-					membr.push(gays3.jid)
-					membr.push(gays4.jid)
-					membr.push(gays5.jid)
-					mentions(teks, membr, true)
-					break
+				
 					case 'fttp':
 					if (args.length < 0) return reply('Cadê o texto, hum?')
 					var txt = encodeURI(body.slice(7))
                     anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${txt}`)
 					client.sendMessage( from, anu, sticker, {quoted:mek})
 					break
+					
 					case 'cornos':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
@@ -998,6 +999,21 @@ if (text.includes("placa"))
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp3', filename: `${anu.title}.mp3`, quoted: mek})
 					break
+					
+					case 'totaluser':
+					if (!isOwner) return reply(mess.only.ownerB)    
+					teks = `\`\`\`╭────「 *TOTAL DE USUÁRIOS DO ❁̸⃪͎۪۪۪〫⃕͘͡⃟💸〄ℝ❂ḈԨƚί•᭄ꦿ⃟꧇ 」\n\`\`\``
+					no = 0
+					for (let hehehe of user) {
+						no += 1
+						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
+					}
+					teks += `│+ Total de usuários : ${user.length}\n╰──────「 ❁̸⃪͎۪۪۪〫⃕͘͡⃟💸〄ℝ❂ḈԨƚί•᭄ꦿ⃟꧇ 」*────`
+					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
+					break
+					
+					
+					
 				case 'game':
 				
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
