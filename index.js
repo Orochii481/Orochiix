@@ -1661,13 +1661,7 @@ if (text.includes("placa"))
 					teks += `│+ Total : ${premium.length}\n╰──────*「 *CAUSS BOT* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
-                  case 'qrcode':
-        			if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
-					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return client.sendMessage(from, 'Digite um texto/url que deseja criar um código qr', text, {quoted: mek})
-					const bufferr = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
-					client.sendMessage(from, bufferr, image, {quoted: mek})
-					break
+                  
 		    	case 'wa.me':
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
