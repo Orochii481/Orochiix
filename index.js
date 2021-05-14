@@ -2364,11 +2364,7 @@ break
 					client.sendMessage(from, atytyd, video, {quoted: mek})
 					await limitAdd(sender) 
 					break  
-				case 'cpaper':
-				cpaper = `${body.slice(8)}`
-				buff = await getBuffer(`https://api.arugaz.my.id/api/photooxy/text-on-burn-paper?text=${cpaper}`, {method: 'get'})
-				client.sendMessage(from, buff, image, {quoted: mek})
-				break 
+				
                                 case 'antilink':
                     if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
