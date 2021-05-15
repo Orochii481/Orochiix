@@ -1332,17 +1332,17 @@ if (text.includes("placa"))
 						reply('On para ativar, Off para desligar')
 					}
 					break
-					case 'antiracismo':
+					case 'antifig':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if ((args[0]) === 'on') {
-						if (isAntiRacismo) return reply('O modo antiracismo já está ativo')
-						antiracismo.push(from)
+						if (isAntifig) return reply('O modo antifig já está ativo')
+						antifig.push(from)
 						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
-						reply(`\`\`\`✓Ativado com sucesso o modo antiracismo no grupo\`\`\` *${groupMetadata.subject}*`)
+						reply(`\`\`\`✓Ativado com sucesso o modo antidig no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
-						antiracismo.splice(from, 1)
+						antifig.splice(from, 1)
 						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
 						reply(`\`\`\`✓Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
