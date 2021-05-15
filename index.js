@@ -27,8 +27,7 @@ const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
-const antifig
-= JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
+const antifig= JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -320,7 +319,7 @@ async function starts() {
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
-	    	const isAntifig = isGroup ? antifig.includes(from) : false
+	    	const isAntiRacismo = isGroup ? antifig.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
@@ -426,7 +425,7 @@ if (text.includes("placa"))
  })
  }		        
 
-        if (messagesC.includes(".fttp a")){
+        if (messagesC.includes(".fttp")){
 		if (!isGroup) return
 		if (!isAntifig) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas,aqui num é pra fig, mas vc e admin n irei te banir')
@@ -459,9 +458,11 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes(".fttp")){
+	        if (messagesC.includes(".figuu")){
 		if (!isGroup) return
-		if (!isAntifig) return
+		if (!isAntifig
+		   
+		   ) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
@@ -834,7 +835,7 @@ if (text.includes("placa"))
 					case 'fttp':
 					if (args.length < 0) return reply('Cadê o texto, hum?')
 					var txt = encodeURI(body.slice(7))
-                    anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${txt}`)
+                                        anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${txt}`)
 					client.sendMessage( from, anu, sticker, {quoted:mek})
 					break
 					
@@ -1339,11 +1340,11 @@ if (text.includes("placa"))
 					if ((args[0]) === 'on') {
 						if (isAntifig) return reply('O modo antifig já está ativo')
 						antifig.push(from)
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
+						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antifig))
 						reply(`\`\`\`✓Ativado com sucesso o modo antidig no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						antifig.splice(from, 1)
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antiracismo))
+						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antifig))
 						reply(`\`\`\`✓Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On para ativar, Off para desligar')
@@ -1826,21 +1827,7 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek, caption: 'Aqui mano'})
 					await limitAdd(sender) 	
 					break  
-				case 'ttp':
-					if (args.length < 1) return reply('Cadê o texto, hum?')
-					ranp = getRandom('.png')
-					rano = getRandom('.webp')
-					teks = body.slice(4).trim()
-					anu = await fetchJson(`https://mhankbarbar.tech/api/text2image?text=${teks}&apiKey=${BarBarKey}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(ranp)
-						if (err) return reply(mess.error.stick)
-						client.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: mek})
-						fs.unlinkSync(rano)
-					})
-                                        await limitAdd(sender)
-					break
+				
                   case 'desbloquear':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -2568,7 +2555,7 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS CAUSS BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS OROCHII BOT 👑* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
