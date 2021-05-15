@@ -27,7 +27,7 @@ const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
-const antifig= JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
+const antifig= JSON.parse(fs.readFileSync('./database/json/antifig.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -319,7 +319,7 @@ async function starts() {
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
-	    	const isAntiRacismo = isGroup ? antifig.includes(from) : false
+	    	const isAntifig = isGroup ? antifig.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
