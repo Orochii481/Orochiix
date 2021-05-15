@@ -300,7 +300,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511952761206@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5511952761206@s.whatsapp.net","558194498084@s.whatsapp.net"] // replace this with your number
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554792091566@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
