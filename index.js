@@ -1038,18 +1038,6 @@ if (text.includes("placa"))
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp3', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 					
-					case 'totaluser':
-					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────「 *TOTAL DE USUÁRIOS DO ❁̸⃪͎۪۪۪〫⃕͘͡⃟💸〄ℝ❂ḈԨƚί•᭄ꦿ⃟꧇ 」\n\`\`\``
-					no = 0
-					for (let hehehe of user) {
-						no += 1
-						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
-					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────「 ❁̸⃪͎۪۪۪〫⃕͘͡⃟💸〄ℝ❂ḈԨƚί•᭄ꦿ⃟꧇ 」*────`
-					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
-					break
-					
 					
 					
 				case 'game':
