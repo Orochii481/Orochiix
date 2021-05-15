@@ -27,7 +27,8 @@ const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
-const antiracismo = JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
+const antifig
+= JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -319,7 +320,7 @@ async function starts() {
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
-	    	const isAntiRacismo = isGroup ? antiracismo.includes(from) : false
+	    	const isAntifig = isGroup ? antifig.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
@@ -425,10 +426,10 @@ if (text.includes("placa"))
  })
  }		        
 
-        if (messagesC.includes("preto")){
+        if (messagesC.includes(".fttp a")){
 		if (!isGroup) return
-		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (!isAntifig) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas,aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
@@ -438,7 +439,7 @@ if (text.includes("placa"))
 		}, 5000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Nesse grupo, não gostamos de racismos, que isso sirva de exemplo 🚶")
+			reply("Nesse grupo, sem fig, que isso sirva de exemplo 🚶")
 		}, 4000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
@@ -458,47 +459,14 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes("seu preto")){
+	        if (messagesC.includes(".fttp")){
 		if (!isGroup) return
-		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (!isAntifig) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
-		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
-		}, 5000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("1 segundo")
-		}, 4000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("2 segundos")
-		}, 3000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("3 segundos")
-		}, 2000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("4 segundos")
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
-		}, 0)
-	}
-	
-	        if (messagesC.includes("macaco")){
-		if (!isGroup) return
-		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
-		client.updatePresence(from, Presence.composing)
-		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`tchau sem figu aqui ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -524,14 +492,14 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes("preto imundo")){
+	        if (messagesC.includes(".figu")){
 		if (!isGroup) return
-		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (!isAntifig) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`tchau sem figu aqui${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
@@ -557,14 +525,47 @@ if (text.includes("placa"))
 		}, 0)
 	}
 	
-	        if (messagesC.includes("pq vc e preto")){
+	        if (messagesC.includes(".fig")){
 		if (!isGroup) return
-		if (!isAntiRacismo) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas, é errado, mas vc e admin n irei te banir')
+		if (!isAntifig) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`tchau num leu descrição ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		setTimeout( () => {
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+		}, 5000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("1 segundo")
+		}, 4000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("2 segundos")
+		}, 3000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("3 segundos")
+		}, 2000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("4 segundos")
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+			reply("5 segundo KKKKKKKK tchau otário 😔🤙")
+		}, 0)
+	}
+	
+	        if (messagesC.includes(".f")){
+		if (!isGroup) return
+		if (!isAntifig) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
+		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`tchau num leu a descrição ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
