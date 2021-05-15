@@ -2484,21 +2484,7 @@ break
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                                case 'mining':
-                                        if (isLimit(sender)) return reply(ind.limitend(pushname))
-                                        if (!isEventon) return reply(`maaf ${pushname} event mining tidak di aktifkan oleh owner`)
-                                        if (isOwner) {
-                                                const one = 999999999
-                                                addLevelingXp(sender, one)
-                                                addLevelingLevel(sender, 99)
-                                                reply(`porque você é nosso proprietário da equipe bot de envio ${one}Xp para voce`)
-                                        } else {
-                                                const mining = Math.ceil(Math.random() * 10000)
-                                                addLevelingXp(sender, mining)
-                                                await reply(`*Parabéns* ${pushname} você pega *${mining}Xp*`)
-                                        }
-                                        await limitAdd(sender)
-                                        break
+                              
 			    case 'waifu':
 				    try {
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu`, {method: 'get'})
