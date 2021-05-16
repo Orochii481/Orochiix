@@ -27,7 +27,7 @@ const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
-const antifig= JSON.parse(fs.readFileSync('./database/json/antifig.json'))
+const antiracismo= JSON.parse(fs.readFileSync('./database/json/antifig.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
 const { exec } = require('child_process')
@@ -301,8 +301,8 @@ async function starts() {
 			const botNumber = client.user.jid
 			const ownerNumber = ["5511952761206@s.whatsapp.net","558194498084@s.whatsapp.net"] // replace this with your number
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["554792091566@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5511952761206@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["5511952761206@s.whatsapp.net"]//ubah nomor lo
 			const premium = ["5511952761206@s.whatsapp.net","5511942016192@s.whatsapp.net","5521994195262@s.whatsapp.net","554888249167@s.whatsapp.net","558194498084@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -319,7 +319,7 @@ async function starts() {
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
-	    	const isAntifig = isGroup ? antifig.includes(from) : false
+	    	const isAntiRacismo = isGroup ? antifig.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
@@ -425,20 +425,20 @@ if (text.includes("placa"))
  })
  }		        
 
-        if (messagesC.includes(".fttp")){
+        if (messagesC.includes(".fttps")){
 		if (!isGroup) return
-		if (!isAntifig) return
-		if (isGroupAdmins) return reply('cara, nao fale essas coisas,aqui num é pra fig, mas vc e admin n irei te banir')
+		if (!isAntiRacismo) return
+		if (isGroupAdmins) return reply('cara, nao fale essas coisas,aqui num é pra figu,mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`tchau racista ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
+		reply(`tchau otario ${sender.split("@")[0]} voce sera expulso deste grupo em 5 segundos`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-			reply("Nesse grupo, sem fig, que isso sirva de exemplo 🚶")
+			reply("Nesse grupo, sem figu, que isso sirva de exemplo 🚶")
 		}, 4000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
@@ -460,9 +460,7 @@ if (text.includes("placa"))
 	
 	        if (messagesC.includes(".figuu")){
 		if (!isGroup) return
-		if (!isAntifig
-		   
-		   ) return
+		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
@@ -495,7 +493,7 @@ if (text.includes("placa"))
 	
 	        if (messagesC.includes(".figu")){
 		if (!isGroup) return
-		if (!isAntifig) return
+		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
@@ -528,7 +526,7 @@ if (text.includes("placa"))
 	
 	        if (messagesC.includes(".fig")){
 		if (!isGroup) return
-		if (!isAntifig) return
+		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
@@ -561,7 +559,7 @@ if (text.includes("placa"))
 	
 	        if (messagesC.includes(".f")){
 		if (!isGroup) return
-		if (!isAntifig) return
+		if (!isAntiRacismo) return
 		if (isGroupAdmins) return reply('cara, nao fale essas coisas, aqui num é pra fig, mas vc e admin n irei te banir')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#izinadmin")) return reply("#izinadmin diterima")
@@ -1328,12 +1326,12 @@ if (text.includes("placa"))
 					if ((args[0]) === 'on') {
 						if (isAntifig) return reply('O modo antifig já está ativo')
 						antifig.push(from)
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antifig))
+						fs.writeFileSync('./database/json/antifig.json', JSON.stringify(antifig))
 						reply(`\`\`\`✓Ativado com sucesso o modo antidig no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else if ((args[0]) === 'off') {
 						antifig.splice(from, 1)
-						fs.writeFileSync('./database/json/antiracismo.json', JSON.stringify(antifig))
-						reply(`\`\`\`✓Modo antiracismo desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
+						fs.writeFileSync('./database/json/antifig.json', JSON.stringify(antifig))
+						reply(`\`\`\`✓Modo antifig desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
 					} else {
 						reply('On para ativar, Off para desligar')
 					}
@@ -3220,9 +3218,9 @@ break
 						reply('Só uma foto mano')
 					}
 					break
-				case 'figu':
-				case 'fig':
-				case 'f':
+				case 'sticker':
+				case 'stiker':
+				case 's':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -3282,7 +3280,7 @@ break
 							fs.unlinkSync(media)
 							let buffer = Buffer.from(res.base64img, 'base64')
 							fs.writeFileSync(ranp, buffer, (err) => {
-								if (err) return reply('Falha, ocorreu um erro, tente novamente mais tarde.')
+								if (err) return reply('Armaria vey deu erro aqui mn, tenta mais tarde ae.')
 							})
 							exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								fs.unlinkSync(ranp)
@@ -3312,35 +3310,8 @@ break
 							.toFormat('webp')
 							.save(ran)*/
 					} else {
-						reply(`Envie fotos com legendas *.f* ou marque uma imagem que já foi enviada`)
+						reply(`Envie fotos com legendas *sticker ou marque uma imagem que já foi enviada`)
 					}
-					break
-				case 'tts':
-					if (args.length < 1) return client.sendMessage(from, 'Qual é o código da linguagem, tio?', text, {quoted: mek})
-					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return client.sendMessage(from, 'Cadê o texto tio', text, {quoted: mek})
-					dtt = body.slice(9)
-					ranm = getRandom('.mp3')
-					rano = getRandom('.ogg')
-					dtt.length > 600
-					? reply('A maior parte do texto é merda')
-					: gtts.save(ranm, dtt, function() {
-						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
-							fs.unlinkSync(ranm)
-							buff = fs.readFileSync(rano)
-							if (err) return reply('falha:(')
-							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
-							fs.unlinkSync(rano)
-						})
-					})
-					break
-				case 'shadow': 
-				if (!isOwner) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply(mess.blank)
-					shad = body.slice(8)
-					reply(mess.wait)
-					ssha = await getBuffer(`https://api-anoncybfakeplayer.herokuapp.com/photooxy/shadowtext?text=${shad}`)
-					client.sendMessage(from, ssha, image, {caption: 'Nihkkkak', quoted: mek})
 					break
 				case 'minion':
 				if (!isOwner) return reply(mess.only.ownerB)
