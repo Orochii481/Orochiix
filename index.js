@@ -319,7 +319,6 @@ async function starts() {
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
-	    	const isAntiRacismo = isGroup ? antifig.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
@@ -1319,23 +1318,7 @@ if (text.includes("placa"))
 						reply('On para ativar, Off para desligar')
 					}
 					break
-					case 'antifig':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (args.length < 1) return reply('Hmmmm')
-					if ((args[0]) === 'on') {
-						if (isAntifig) return reply('O modo antifig já está ativo')
-						antifig.push(from)
-						fs.writeFileSync('./database/json/antifig.json', JSON.stringify(antifig))
-						reply(`\`\`\`✓Ativado com sucesso o modo antidig no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else if ((args[0]) === 'off') {
-						antifig.splice(from, 1)
-						fs.writeFileSync('./database/json/antifig.json', JSON.stringify(antifig))
-						reply(`\`\`\`✓Modo antifig desativado com sucesso no grupo\`\`\` *${groupMetadata.subject}*`)
-					} else {
-						reply('On para ativar, Off para desligar')
-					}
-					break
+					
 				case 'modonsfw':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -3218,9 +3201,9 @@ break
 						reply('Só uma foto mano')
 					}
 					break
-				case 'sticker':
-				case 'stiker':
-				case 's':
+				case 'figu':
+				case 'fig':
+				case 'f':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
