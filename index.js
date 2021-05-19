@@ -300,7 +300,7 @@ async function starts() {
 			const botNumber = client.user.jid
 			const ownerNumber = ["5511952761206@s.whatsapp.net"] // replace this with your number
 			const mod = [ownerNumber,"5511952761206@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["554792091566@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5511952761206@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
 			const premium = ["554792091566@s.whatsapp.net","558296156440@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
@@ -749,7 +749,7 @@ if (text.includes("placa"))
 				case 'help':
 					 me=client.user 
 					  uptime=process.uptime 
-                       client.sendMessage(from, help(pushname,prefix), text)
+                        client.sendMessage(from, help(pushname,prefix), text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "*Bills DOMINA *", 'jpegThumbnail': fs.readFileSync('./assets/naotirem.webp')}}}})
 				case 'menu':
 					client.sendMessage(from, help1(prefix), text)  
                  
