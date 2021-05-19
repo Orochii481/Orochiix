@@ -298,9 +298,9 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511952761206@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5511952761206@s.whatsapp.net","5511974023872@s.whatsapp.net"] // replace this with your number
 			const mod = [ownerNumber,"5511952761206@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["5511952761206@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5511952761206@s.whatsapp.net","5511974023872@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
 			const premium = ["554792091566@s.whatsapp.net","558296156440@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
