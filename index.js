@@ -753,10 +753,7 @@ if (text.includes("placa"))
 				case 'menu':
 					client.sendMessage(from, help1(prefix), text)  
                  
-				case 'help1':
-				case 'menu1':
-					client.sendMessage(from, help1(prefix), text)
-					break
+				
 					case 'kiss':
 				    try {    
 					
