@@ -8,79 +8,74 @@ const help = (pushname, prefix) => {
 ║
 ╠══〘 MENU 〙══
 ║
-║🌕 */figu*
-║🌕 */toimg*
-║🌕 */memeindo*
-║🌕 */tts*
-║🌕 */lolih [on]*
-║🌕 */nsfwloli [off]*
-║🌕 */url2img*
-║🌕 */leens [na legenda]*
-║🌕 */wait [na legenda]*
-║🌕 */setprefix*
-║🌕 */simih [1/0]*
-║🌕 */marcar*
-║🌕 */add [@]*
-║🌕 */banir [@]*
-║🌕 */promover [@]*
-║🌕 */rebaixar*
-║🌕 */admins*
-║🌕 */marcar2*
-║🌕 */bc [texto]* (ele faz uma ™)
-║🌕 */marcar3*
-║🌕 */bloqueados*
-║🌕 */bloquear [@]*
-║🌕 */desbloquear [@]*
-║🌕 */limpar*
-║🌕 */bc [ *texto* ]*
-║🌕 */bemvindo [1/0]*
-║🌕 */clonar [@]*
-║🌕 */tts [texto]*
-║🌕 */setnome*
-║🌕 */termux*
-║🌕 */setfoto*
-║🌕 */grupoinfo*
-║🌕 */ytmp4*
-║🌕 */bomdia*
-║🌕 */boanoite*
-║🌕 */hidetag
-║🌕 */gostosa 
-║🌕 */top5viado
+║🌕*${prefix}figu*
+║🌕*${prefix}memeindo*
+║🌕*${prefix}tts*
+║🌕*${prefix}lolih [on]*
+║🌕*${prefix}nsfwloli [off]*
+║🌕*${prefix}url2img*
+║🌕*${prefix}leens [na legenda]*
+║🌕*${prefix}wait [na legenda]*
+║🌕*${prefix}setprefix*
+║🌕*${prefix}simih [1/0]*
+║🌕*${prefix}marcar*
+║🌕*${prefix}add [55]*
+║🌕*${prefix}banir [@]*
+║🌕*${prefix}promover [@]*
+║🌕*${prefix}rebaixar*
+║🌕*${prefix}admins*
+║🌕*${prefix}marcar2*
+║🌕*${prefix}bc [texto]* (ele faz uma ™)
+║🌕*${prefix}marcar3*
+║🌕*${prefix}bloqueados*
+║🌕*${prefix}bloquear [@]*
+║🌕*${prefix}desbloquear [@]*
+║🌕*${prefix}limpar*
+║🌕*${prefix}bc [ *texto* ]*
+║🌕*${prefix}bemvindo [1/0]*
+║🌕*${prefix}clonar [@]*
+║🌕*${prefix}tts [texto]*
+║🌕*${prefix}setnome*
+║🌕*${prefix}termux*
+║🌕*${prefix}setfoto*
+║🌕*${prefix}grupoinfo*
+║🌕*${prefix}ytmp4*
+║🌕*${prefix}bomdia*
+║🌕*${prefix}boanoite*
+║🌕*${prefix}hidetag
 ║
 ╠══〘 GRUPO 〙══
 ║
-║🌕 */banir*
-║🌕 */leveling [on/off]*
-║🌕 */level*
-║🌕 */add*
-║🌕 */promover*
-║🌕 */setfoto [na legenda]*
-║🌕 */setname [texto]*
-║🌕 */rebaixar*
-║🌕 */admins*
-║🌕 */marcar*
-║🌕 */marcar2*
-║🌕 */marcar3*
-║🌕 */bemvindo [1/0]*
-║🌕 */grupoinfo*
-║🌕 */bomdia*
-║🌕 */boatarde*
-║🌕 */boanoite*
-║🌕 */setdesc*
+║🌕*${prefix}banir*
+║🌕*${prefix}leveling [on/off]*
+║🌕*${prefix}level*
+║🌕*${prefix}add*
+║🌕*${prefix}promover*
+║🌕*${prefix}setfoto [na legenda]*
+║🌕*${prefix}setname [texto]*
+║🌕*${prefix}rebaixar*
+║🌕*${prefix}admins*
+║🌕*${prefix}marcar*
+║🌕*${prefix}marcar2*
+║🌕*${prefix}marcar3*
+║🌕*${prefix}bemvindo [1/0]*
+║🌕*${prefix}grupoinfo*
+║🌕*${prefix}bomdia*
+║🌕*${prefix}boatarde*
+║🌕*${prefix}boanoite*
+║🌕*${prefix}setdesc*
 ║
 ╠══〘 ESPECIFICO DO BOT 〙══
 ║
-║🌕 */clonar [@]*
-║🌕 */dono*
-║🌕 */ping [ver velocidade do bot]*
-║🌕 */termux*
-║🌕 */gay [@]*
-║🌕 */wame*
-║🌕 */map (nome)*
-║🌕 */setppbot (marque uma img)*
-║🌕 */pinterest (nome)*
-║🌕 */desligar (so para o dono)*
-║🌕 */timer*
+║🌕*${prefix}clonar [@]*
+║🌕*${prefix}termux*
+║🌕*${prefix}gay [@]*
+║🌕*${prefix}wame*
+║🌕*${prefix}map (nome)*
+║🌕*${prefix}setppbot (marque uma img)*
+║🌕*${prefix}pinterest (nome)*
+║🌕*${prefix}desligar (so para o dono)*
+║🌕*${prefix}timer*
 ║
 ╠══〘 MAIS ALGUNS 〙══
 ║
@@ -102,68 +97,16 @@ const help = (pushname, prefix) => {
 ║🌕 */alerta*
 ║🌕 */analise*
 ║
-╠══〘 IMAGENS 〙══
-║
-║🌕 */loli* [off]
-║🌕 */loli1*
-║🌕 */boanoite*
-║🌕 */bomdia*
-║🌕 */boatarde*
-║🌕 */minato [aleatórias]*
-║🌕 */boruto [aleatórias]*
-║🌕 */hinata [aleatórias]*
-║🌕 */sasuke [aleatórias]*
-║🌕 */sakura [aleatórias]*
-║🌕 */naruto [aleatórias]*
-║🌕 */meme*   
-║🌕 */lofi*
-║🌕 */canal*
-║🌕 */nsfwloli1*
-║🌕 */games*
-║🌕 */gta*
-║🌕 */fornay*
-║🌕 */lol*
-║🌕 */csgo*
-║
 ╠══〘 Premium 〙══
 ║
 ║👑 *em produção*
 ║
-╠══〘 LOGO 〙══
-║
-║🌕 */smoke*
-║🌕 */cemiterio*
-║🌕 */wblack*
-║🌕 */chrome*
-║🌕 */naruto*
-║🌕 */shadow*
-║🌕 */glitch*
-║🌕 */pubglogo*
-║🌕 */bfild*
-║🌕 */coffee*
-║🌕 */coffe2*
-║🌕 */neon*
-║🌕 */summer*
-║🌕 */flower*
-║🌕 */bcover*
-║🌕 */dado3d*
-║🌕 */vintage*
-║🌕 */glowing*
-║🌕 */camuflagem*
-║🌕 */rainbow*
-║🌕 */honey*
-║🌕 */oceano*
-║🌕 */wolflogo*
-║🌕 */puff*
-║🌕 */flaming*
-║
 ╠══〘 OUTROS /2 〙══
 ║
-║🌕 */antilink [1/0]*
-║🌕 */brainly [pergunta]*
-║🌕 */antiracismo [on/off]*
-║🌕 */setnomebot*
-║🌕 */meme*
+║🌕*${prefix}antilink [1/0]*
+║🌕*${prefix}brainly [pergunta]*
+║🌕*${prefix}setnomebot*
+║🌕*${prefix}meme*
 ║
 ╠══〘 INTERATIVOS 〙══
 ║
