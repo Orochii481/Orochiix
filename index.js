@@ -805,7 +805,7 @@ if (text.includes("placa"))
 			tujuh = fs.readFileSync('./assets/att.webp');
             
 	
-	)
+	
 	}
 	
 			if (messagesC.includes("peitaeu")){
