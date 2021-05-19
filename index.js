@@ -62,14 +62,14 @@ const instagram = 'http://www.instagram.com/';
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:Causs⚡\n' // Nama kamu
+            + 'FN:Bills\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
             + 'TEL;type=CELL;type=VOICE;waid=5547992091566:+55 47 992091566\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '/' 
 blocked = []
 limitawal = '999999999'
-cr = '*Causs*'
+cr = '*Bills*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -294,10 +294,10 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD CAUSS BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD Bills BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
-					ownerG: '[❗] Causs? Este é um recurso especial para o CAUSS ❌',
-					ownerB: '[❗] Causs? Este é um recurso especial para o CAUSS ❌',
+					ownerG: '[❗] Dono? Este é um recurso especial para meu Dono ❌',
+					ownerB: '[❗] Dono? Este é um recurso especial para meu Dono ❌',
 					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo do causs. Registre-se para fazer amizade com o bot causs por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar ✞︎𝙼𝚎𝚕𝚒𝚘𝚍𝚊𝚜✞︎|17\n\n──「 BOT CAUSS 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
@@ -305,7 +305,7 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["554792091566@s.whatsapp.net","554791347623@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["5511952761206@s.whatsapp.net","5511974023872@s.whatsapp.net"] // replace this with your number
 			const mod = [ownerNumber,"554792091566@s.whatsapp.net","554791347623@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["554792091566@s.whatsapp.net","554791347623@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net","554791347623@s.whatsapp.net"]//ubah nomor lo
@@ -697,16 +697,8 @@ if (text.includes("placa"))
 				if (messagesC.includes("lindo")){
 			client.updatePresence(from, Presence.composing)
 			reply("obgd meu amor")
-	}
+
 	
-				if (messagesC.includes("fcc")){
-			client.updatePresence(from, Presence.composing)
-			reply("ainda existe isso? KKKKKKKKK")
-	}
-	
-	if (messagesC.includes("sua")){
-			client.updatePresence(from, Presence.composing)
-			reply("Ou krl para com isso")
 	}
 
 	if (messagesC.includes("vdd")){
@@ -720,22 +712,13 @@ if (text.includes("placa"))
 	if (messagesC.includes("solteira?")){
 			client.updatePresence(from, Presence.composing)
 			reply("eu to")
-	}
-	if (messagesC.includes("trava")){
-			client.updatePresence(from, Presence.composing)
-			reply("tem travazap no gp?😨")
+	
 	}
 	if (messagesC.includes("dor")){
 			client.updatePresence(from, Presence.composing)
 			reply("tbm")
-	}
-	if (messagesC.includes("porno")){
-			client.updatePresence(from, Presence.composing)
-			reply("n fala essas coisas q eu sou da igreja moço")
-	}
-	if (messagesC.includes("cringe")){
-			client.updatePresence(from, Presence.composing)
-			reply("vc q é cringe pora")
+
+	
 	}
 	if (messagesC.includes("tiktok")){
 			client.updatePresence(from, Presence.composing)
@@ -744,14 +727,7 @@ if (text.includes("placa"))
 	if (messagesC.includes("hentai")){
 			client.updatePresence(from, Presence.composing)
 			reply("2d man?😐")
-	}
-	if (messagesC.includes("pprt")){
-			client.updatePresence(from, Presence.composing)
-			reply("pptrt")
-	}
-	if (messagesC.includes("tatakae")){
-			client.updatePresence(from, Presence.composing)
-			reply("sasageyo")
+	
 	}
 	if (messagesC.includes("sasageyo")){
 			client.updatePresence(from, Presence.composing)
@@ -765,24 +741,15 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			reply("mikasa")
 	}
-	if (messagesC.includes("mama")){
+	if (messagesC.includes("gostoso")){
 			client.updatePresence(from, Presence.composing)
-			reply("claro")
+			reply("q isso vc q é")
+	
 	}
 
-	if (messagesC.includes("buceta")){
+	if (messagesC.includes("bot")){
 			client.updatePresence(from, Presence.composing)
-			reply("ok")
-	}
-
-	if (messagesC.includes("busseta")){
-			client.updatePresence(from, Presence.composing)
-			reply("amo")
-	}
-
-	if (messagesC.includes("elvis")){
-			client.updatePresence(from, Presence.composing)
-			reply("oq vc quer com ele? se for p te comer n vai dar hj tlgd,talvez amanhã se ele estiver dboa")
+			reply("opa em oq posso ajudar?")
 	}
 	
 			if (messagesC.includes("but")){
@@ -793,75 +760,29 @@ if (text.includes("placa"))
 				if (messagesC.includes("amor")){
 			client.updatePresence(from, Presence.composing)
 			reply("oii mb, falou cmg? 🥺")
-	}
-	
-			if (messagesC.includes("caussbot")){
-			client.updatePresence(from, Presence.composing)
-			reply("oiii")
+
 	}
 	
 			if (messagesC.includes("bem?")){
 			client.updatePresence(from, Presence.composing)
 			reply("to bem, vlw por perguntar 😏")
+	
+	
 	}
 	
-				if (messagesC.includes("!help")){
-			client.updatePresence(from, Presence.composing)
-			reply("É com . caralho")
-	}
 	
-					if (messagesC.includes("!menu")){
-			client.updatePresence(from, Presence.composing)
-			reply("É com / caralho")
-	}
-	
-					if (messagesC.includes(".menu")){
-			client.updatePresence(from, Presence.composing)
-			reply("É com / caralho")
-	}
-		
-					if (messagesC.includes("/menu")){
-			client.updatePresence(from, Presence.composing)
-			reply("Obrigado por utilizar o Causs Bot, causs agradece")
-	}
-	
-					if (messagesC.includes("#help")){
-			client.updatePresence(from, Presence.composing)
-			reply("É com / caralho")
-	}
-	
-					if (messagesC.includes("#menu")){
-			client.updatePresence(from, Presence.composing)
-			reply("É com / caralho")
-	}
 	
 			if (messagesC.includes("chato")){
 			client.updatePresence(from, Presence.composing)
 			reply("nossa 🥺")
-	}
 	
-			if (messagesC.includes("vadia")){
-			client.updatePresence(from, Presence.composing)
-			reply("ai mano, vc acha legal usar um argumento machista?")
-	}
-	
-			if (messagesC.includes("maria")){
-			client.updatePresence(from, Presence.composing)
-			reply("amo ela")
-	}
-	
-		if (messagesC.includes("corno")){
-			client.updatePresence(from, Presence.composing)
-			reply("vsfd seu merda")
+
 	}
 	
 		if (messagesC.includes("tmnc")){
 			client.updatePresence(from, Presence.composing)
 			reply("vai vc, tu ja me disse q é mo bom")
-	}				
-		if (messagesC.includes("merda")){
-			client.updatePresence(from, Presence.composing)
-			reply("e quem disse que isso e problema meu?")
+	
 	}
 	
 		if (messagesC.includes("eae")){
@@ -883,18 +804,8 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/att.webp');
             
-	}
 	
-			if (messagesC.includes("/menu")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/Caussdomina.opus');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	}
-	
-			if (messagesC.includes("Hehehe")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/hehe.mp3');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	)
 	}
 	
 			if (messagesC.includes("peitaeu")){
@@ -965,11 +876,7 @@ if (text.includes("placa"))
 			client.updatePresence(from, Presence.composing)
 			tujuh = fs.readFileSync('./assets/puta.opus');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	} 
-			if (messagesC.includes("puta")){
-			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/puta.opus');
-            client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+	
 	} 
 			if (messagesC.includes("xandao")){
 			client.updatePresence(from, Presence.composing)
