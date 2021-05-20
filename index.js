@@ -4017,24 +4017,12 @@ break
 					membr.push(gays5.jid)
 					mentions(teks, membr, true)
 					break
-					case 'attp':
-			    	if (args.length < 1) return reply(mess.blank)
-					teks = body.slice(7)
-					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
-					reply('*Estou fazendo, se der erro tente novamente ✓*')
-					cry = getRandom('.gif')
-					rano = getRandom('.webp')
-					anu = await fetchJson(`https://api.xteam.xyz/attp?file&text=${teks}`, {method: 'get'})
-                   if (!isGroup) return reply(mess.only.group)
-					reply (mess.wait)
-					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
-						fs.unlinkSync(cry)
-						buffer = fs.readFileSync(rano)
-						client.sendMessage(from, buffer, sticker, {quoted: mek})
-						fs.unlinkSync(rano)
-					})
-					await limitAdd(sender) 
-					break 			
+						case 'attp':
+					if (args.length < 0) return reply('Cadê o texto, hum?')
+					var txt = encodeURI(body.slice(7))
+                    anu = await getBuffer(`https://api.xteam.xyz/attp?file&text=${txt}`)
+					client.sendMessage( from, anu, sticker, {quoted:mek})
+					break
 					case 'punheteiros':
       if (!isGroup) return reply(mess.only.group)
                         member = []
