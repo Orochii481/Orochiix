@@ -12,10 +12,10 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}memeindo*
 ║🌕*${prefix}tts*
 ║🌕*${prefix}lolih [on]*
-║🌕*${prefix}nsfwloli [off]*
+║🌕*${prefix}gostosa*
 ║🌕*${prefix}url2img*
-║🌕*${prefix}leens [na legenda]*
-║🌕*${prefix}wait [na legenda]*
+║🌕*${prefix}attp*
+║🌕*${prefix}gays*
 ║🌕*${prefix}setprefix*
 ║🌕*${prefix}simih [1/0]*
 ║🌕*${prefix}marcar*
@@ -30,7 +30,7 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}bloqueados*
 ║🌕*${prefix}bloquear [@]*
 ║🌕*${prefix}desbloquear [@]*
-║🌕*${prefix}limpar*
+║🌕*${prefix}casal*
 ║🌕*${prefix}bc [ *texto* ]*
 ║🌕*${prefix}bemvindo [1/0]*
 ║🌕*${prefix}clonar [@]*
@@ -42,7 +42,7 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}ytmp4*
 ║🌕*${prefix}bomdia*
 ║🌕*${prefix}boanoite*
-║🌕*${prefix}hidetag
+║🌕*${prefix}punheteiros*
 ║
 ╠══〘 GRUPO 〙══
 ║
