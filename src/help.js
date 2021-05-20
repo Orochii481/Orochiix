@@ -31,7 +31,7 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}bloquear [@]*
 ║🌕*${prefix}desbloquear [@]*
 ║🌕*${prefix}casal*
-║🌕*${prefix}bc [ *texto* ]*
+║🌕*${prefix}amor*
 ║🌕*${prefix}bemvindo [1/0]*
 ║🌕*${prefix}clonar [@]*
 ║🌕*${prefix}tts [texto]*
