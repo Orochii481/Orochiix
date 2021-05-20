@@ -3998,6 +3998,112 @@ break
 						reply('Transmissão enviada')
 					}
 					break
+					case 'gays':
+					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
+					membr = []
+					const gay1 = groupMembers
+					const gay2 = groupMembers
+					const gay3 = groupMembers
+					const gay4 = groupMembers
+					const gay5 = groupMembers
+					const gays1 = gay1[Math.floor(Math.random() * gay1.length)]
+					const gays2 = gay2[Math.floor(Math.random() * gay2.length)]
+					const gays3 = gay3[Math.floor(Math.random() * gay3.length)]
+					const gays4 = gay4[Math.floor(Math.random() * gay4.length)]
+					const gays5 = gay5[Math.floor(Math.random() * gay5.length)]
+					var porcentagemgay = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+					const porcentagem = porcentagemgay[Math.floor(Math.random() * porcentagemgay.length)]
+					teks = `${pushname} Esses são os mais SuperGays do grupo ${groupName}\n@${gays1.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays2.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays3.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays4.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n@${gays5.jid.split('@')[0]}\nCom uma porcentagem de ${porcentagem}\n\n Sem pressão Neném, ⚡Xandão⚡ ta aqui`
+					membr.push(gays1.jid)
+					membr.push(gays2.jid)
+					membr.push(gays3.jid)
+					membr.push(gays4.jid)
+					membr.push(gays5.jid)
+					mentions(teks, membr, true)
+					break
+					case 'attp':
+			    	if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 15) return reply('O texto é longo, até 15 caracteres')
+					reply('*Estou fazendo, se der erro tente novamente ✓*')
+					cry = getRandom('.gif')
+					rano = getRandom('.webp')
+					anu = await fetchJson(`https://api.xteam.xyz/attp?file&text=${teks}`, {method: 'get'})
+                   if (!isGroup) return reply(mess.only.group)
+					reply (mess.wait)
+					exec(`wget ${anu.result} -O ${cry} && ffmpeg -i ${cry} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
+						fs.unlinkSync(cry)
+						buffer = fs.readFileSync(rano)
+						client.sendMessage(from, buffer, sticker, {quoted: mek})
+						fs.unlinkSync(rano)
+					})
+					await limitAdd(sender) 
+					break 			
+					case 'punheteiros':
+      if (!isGroup) return reply(mess.only.group)
+                        member = []
+                        const p1 = groupMembers
+                        const p2 = groupMembers
+                        const p3 = groupMembers
+                        const p4 = groupMembers
+                        const p5 = groupMembers
+                        const o1 = p1[Math.floor(Math.random() * p1.length)]
+                        const o2 = p2[Math.floor(Math.random() * p2.length)]
+                        const o3 = p3[Math.floor(Math.random() * p3.length)]
+                        const o4 = p4[Math.floor(Math.random() * p4.length)]
+                        const o5 = p5[Math.floor(Math.random() * p5.length)]
+                        teks = `
+                  *TOP CINCO ${body.slice(10)}\n\n@${o1.jid.split('@')[0]}👉👌\n\n\n2=👉👌@${o2.jid.split('@')[0]}👉👌\n\n\n3=👉👌@${o3.jid.split('@')[0]}👉👌\n\n\n4=👉👌@${o4.jid.split('@')[0]}👉👌\n\n\n5=👉👌@${o5.jid.split('@')[0]}👉👌\n\n\n👉👌ESSES SAO OS CINCO MAIS PUNHETEIROS DO GRUPO👉👌`
+                        member.push(o1.jid)
+                        member.push(o2.jid)
+                        member.push(o3.jid)
+                        member.push(o4.jid)
+                        member.push(o5.jid)
+                        mentions(teks, member, true)
+                                        break
+					 case 'casal':
+					if (!isGroup) return reply(mess.only.group)
+						membr = []
+						const suamae11 = groupMembers
+						const suamae21 = groupMembers
+						const teupai11 = suamae11[Math.floor(Math.random() * suamae11.length)]
+						const teupai21 = suamae21[Math.floor(Math.random() * suamae21.length)]
+						var shipted1 = ["1%", `2%`, `3%`, `4%`, `5%`, `6%`, `7`, `8%`, `9%`, `10`, `11%`, `12%`,`13%`, `14%`, `15%`, `16%`, `17%`, `18%`, `19%`, `20%`, `21%`, `22`, `23%`, `24%`, `25%`, `26%`, `27%`, `28%`, `27%`, `28%`, `29%`, `30%`, `31%`, `32%`, `33%`, `34%`, `35%`, `36%`, `37%`, `38%`, `39%`, `40%`, `41%`, `42%`, `43%`, `44%`, `45%`, `46%`, `47%`, `48%`, `49%`, `50%`, `51%`, `52%`, `53%`, `54%`, `55%`, `56%`, `57%`, `58%`, `59%`, `60%`, `61%`, `62%`, `63%`, `64%`, `65%`, `66%`, `67%`, `68%`, `69%`, `70%`, `71%`, `72%`, `73%`, `74%`, `75%`, `76%`, `77%`, `78%`, `79%`, `80%`, `81%`, `82%`, `85%`, `84%`, `85%`, `86%`, `87%`, `88%`, `89%`, `90%`, `91%`, `92%`, `93%`, `94%`, `95%`, `96%`, `97%`, `98%`, `99%`, `100%`]
+						const shipted = shipted1[Math.floor(Math.random() * shipted1.length)]
+						teks = `*Hmmm.... Eu Shipo eles 2💘💘*\n\n1= @${teupai11.jid.split('@')[0]}\ne esse\n2= @${teupai21.jid.split('@')[0]}\ncom uma porcentagem de: ${shipted}`
+						membr.push(teupai11.jid)
+						membr.push(teupai21.jid)
+						mentions(teks, membr, true)
+					break
+					case 'gostosa':
+                     if (!isGroup) return reply(mess.only.group)
+                      membr = []
+                      const gostosa12 = groupMembers
+                      const gostosa11 = groupMembers
+                      const gostoso12 = gostosa12[Math.floor(Math.random() * gostosa12.length)]
+                      const gostoso11 = gostosa11[Math.floor(Math.random() * gostosa11.length)]
+                      reply(`*ＤＥＴＥＣＴＯＲ   ＤＥ  ＧＯＳＴＯＳＡＳ👩‍⚕️*\n\n*pi pi pi pi*  \n*pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipipipi🚨🚨🚨pipi*\n\n@${gostoso11.jid.split('@')[0]} @${gostoso12.jid.split('@')[0]} *PARADA(O)S AÍ🖐*\n\n*VOCÊ ACABA DE RECEBER DUAS MULTAS*\n\n*1 por não dar bom dia,boa tarde,boa noite e outra por ser muito*\n\n*gostosa(o)*\n\n*valor da multa:*\n*FOTO DA TETINHA NO PV kkkkk*`)
+                      membr.push(gostosa11.jid)
+                      membr.push(gostosa12.jid)
+                      mentions(teks, membr, true)
+                       break
+					case 'amor':
+                if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marque a pessoa')
+				mentidn = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
+                ghost = mek.participant
+                const mor =['22','40','45','100','98','99','12','5','0','67','88']
+				const am = mor[Math.floor(Math.random() * mor.length)]
+				rate = body.slice(1)		
+				var kic = `${sender.split("@")[0]}@s.whatsapp.net`		
+		     	 reply(`Fazendo probabilidades`)
+				 data = fs.readFileSync('./integraçao/shit.js');
+                 jsonData = JSON.parse(data);
+                 randIndex = Math.floor(Math.random() * jsonData.length);
+                 randKey = jsonData[randIndex];
+                buffer = await getBuffer(randKey.result)               
+                amor = `${pushname} suas chances de ficar com @${mentidn.split('@')[0]} são de: ${am}%`
+                client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', quoted: mek, caption: amor, contextInfo: {mentionedJid: [mentidn]}})
+				break
 				case 'wait':
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
