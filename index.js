@@ -3994,6 +3994,17 @@ break
 						reply('Transmissão enviada')
 					}
 					break
+					case 'roleta':
+					if (!isGroup) return reply(mess.only.group)
+					var roletaresu = [`🍒🍅🍇`, `🍅🍇🍒`, `🍇🍅🍇`, `🍒🍒🍇`, `🍇🍇🍒`, `🍅🍅🍇`, `🍇🍒🍒`]
+					var roletaresu2 = [`🍒🍅🍇`, `🍅🍇🍒`, `🍇🍅🍇`, `🍒🍒🍇`, `🍇🍇🍒`, `🍒🍅🍇`, `🍅🍇🍒`, `🍇🍅🍇`, `🍒🍒🍇`, `🍇🍇🍒`, `🍒🍅🍇`, `🍅🍇🍒`, `🍇🍅🍇`, `🍒🍒🍇`, `🍇🍇🍒`, `🍒🍒🍒`, `🍇🍇🍇`,  `🍅🍅🍅`, `🍅🍅🍇`, `🍇🍒🍒`, `🍒🍇🍇`]
+					var roletaresu3 = [`🍒🍅🍇`, `🍅🍇🍒`, `🍇🍅🍇`, `🍒🍒🍇`, `🍇🍇🍒`, `🍅🍅🍇`, `🍇🍒🍒`, `🍇🍒🍒`, `🍒🍇🍇`]
+					const roleta1 = roletaresu[Math.floor(Math.random() * roletaresu.length)]
+					const roleta2 = roletaresu2[Math.floor(Math.random() * roletaresu2.length)]
+					const roleta3 = roletaresu3[Math.floor(Math.random() * roletaresu3.length)]
+					teksahh = `Roleta Girada🎰🤠\nlhe desejo azar pra cacete\n\n${roleta1}\n${roleta2}\n${roleta3}\nSorte é Sorte!`
+					client.sendMessage(from, teksahh, text, {quoted: mek})
+					break
 					case 'gays':
 					if (!isGroup) return reply(`Esse comando so pode ser usadoem grupos parsa`)
 					membr = []
