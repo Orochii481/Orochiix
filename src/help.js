@@ -2,7 +2,7 @@ const help = (pushname, prefix) => {
 
 	return `
 
-  ─────────❶*Bills BOT*❷────────
+──────❶*Bills BOT*❷───────
 (っ◕‿◕)っ Olá ${pushname}
 ┌─────────❶.❷────────
 ║
@@ -36,9 +36,9 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}clonar [@]*
 ║🌕*${prefix}tts [texto]*
 ║🌕*${prefix}setnome*
-║🌕*${prefix}termux*
+║🌕*${prefix}roleta*
 ║🌕*${prefix}setfoto*
-║🌕*${prefix}grupoinfo*
+║🌕*${prefix}infogp*
 ║🌕*${prefix}ytmp4*
 ║🌕*${prefix}bomdia*
 ║🌕*${prefix}boanoite*
