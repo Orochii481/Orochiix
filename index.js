@@ -2007,26 +2007,7 @@ break
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
 					reply('De acordo com o percentual gay:\n\n'+anu.desc+anu.persen)
 					break
-			 case 'leaderboard':
-		case 'lb':
-				_level.sort((a, b) => (a.xp < b.xp) ? 1 : -1)
-				uang.sort((a, b) => (a.uang < b.uang) ? 1 : -1)
-				let leaderboardlvl = '-----[ *LEADERBOARD LEVEL* ]----\n\n'
-				let leaderboarduang = '-----[ *LEADERBOARD UANG* ]----\n\n'
-				let nom = 0
-				try {
-				for (let i = 0; i < 10; i++) {
-					nom++
-					leaderboardlvl += `*[${nom}]* ${_level[i].id.replace('@s.whatsapp.net', '')}\n◪  *XP*: ${_level[i].xp}\n◪  *Level*: ${_level[i].level}\n`
-					leaderboarduang += `*[${nom}]* ${uang[i].id.replace('@s.whatsapp.net', '')}\n◪  *Uang*: _Rp${uang[i].uang}_\n◪  *Limit*: ${limitawal - _limit[i].limit}\n`
-				}
-				await reply(leaderboardlvl)
-				await reply(leaderboarduang)
-				} catch (err) {
-				console.error(err)
-				await reply(`minimal 10 user untuk bisa mengakses database`)
-				}
-				break
+			
 			case 'instaimg':
 				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com')) return reply(mess.error.lv)
 				    anu = await fetchJson(`https://alfians-api.herokuapp.com/api/ig?url=${args[0]}`, {method: 'get'})
