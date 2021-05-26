@@ -4042,7 +4042,7 @@ break
                         const o4 = p4[Math.floor(Math.random() * p4.length)]
                         const o5 = p5[Math.floor(Math.random() * p5.length)]
                         teks = `
-                  *TOP CINCO ${body.slice(10)}\n\n@${o1.jid.split('@')[0]}👉👌\n\n\n2=👉👌@${o2.jid.split('@')[0]}👉👌\n\n\n3=👉👌@${o3.jid.split('@')[0]}👉👌\n\n\n4=👉👌@${o4.jid.split('@')[0]}👉👌\n\n\n5=👉👌@${o5.jid.split('@')[0]}👉👌\n\n\n👉👌ESSES SÃO OS CINCO MAIS PUNHETEIROS DO GRUPO👉👌`
+                  *TOP CINCO ${body.slice(10)}👉👌\n\n\@${o1.jid.split('@')[0]}👉👌\n\n\n2=👉👌@${o2.jid.split('@')[0]}👉👌\n\n\n3=👉👌@${o3.jid.split('@')[0]}👉👌\n\n\n4=👉👌@${o4.jid.split('@')[0]}👉👌\n\n\n5=👉👌@${o5.jid.split('@')[0]}👉👌\n\n\n👉👌ESSES SÃO OS CINCO MAIS PUNHETEIROS DO GRUPO👉👌`
                         member.push(o1.jid)
                         member.push(o2.jid)
                         member.push(o3.jid)
