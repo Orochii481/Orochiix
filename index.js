@@ -301,7 +301,7 @@ async function starts() {
 			const mod = [ownerNumber,"5511952761206@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["5511952761206@s.whatsapp.net","5511974023872@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["554792091566@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["554792091566@s.whatsapp.net","558296156440@s.whatsapp.net"] 
+			const premium = ["5511952761206@s.whatsapp.net","558296156440@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			pushname = client.contacts[sender] != undefined ? client.contacts[sender].vname || client.contacts[sender].notify : undefine
@@ -766,28 +766,39 @@ if (text.includes("placa"))
 						reply('❌ *ERRO* ❌')
 					}
 					break
-					case 'lista':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply('Você quem é o proprietário?')
-					if (args.length < 1) return reply('Onde está o texto, irmão?')
-					reply(mess.wait)
-					client.sendMessage(from, 'Adicionando mensagem à lista com sucesso' , text, { quoted: mek })
-					client.sendMessage(from, addsay(prefix), text, { quoted: mek })
-					break
-					case 'addsay':
-				    hai = body.slice(8)
-						sayrandom.push(hai)
-						fs.writeFileSync('./src/say.json', JSON.stringify(sayrandom))
-						reply(`Sucesso, Disse ${hai} Adicionado ao banco de dados`)
-						break
-                   case 'saylist':
-					teks = 'Esta é a lista de dizeres :\n'
-					for (let awokwkwk of sayrandom) {
-						teks += `╠➥ ${awokwkwk}\n`
-					}
-					teks += `Total : ${sayrandom.length}`
-					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": sayrandom}})
-					break
+					case 'logotop':
+             txt = body.slice(8)
+            teks = txt.split("|")[0];
+            teks2 = txt.split("|")[1];
+         loll = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy/filter?text=${teks}&tema=slides&filtro=${teks2}`)
+      cu5 = await getBuffer(loll.result)
+         client.sendMessage(from, cu5,  video, { mimetype: 'video/mp4', quoted: mek})
+      break
+					case 'gtav':
+	var imgbb = require('imgbb-uploader')
+	if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+	  ted = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo: mek
+	  reply('vai da erro mais espera ai')
+	  owgi = await client.downloadAndSaveMediaMessage(ted)
+	  tels = body.slice(7)
+	  anu = await imgbb("3ea1465ef91578a90ee81f7d41c59a1f", owgi)
+	  hehe = await getBuffer(`https://videfikri.com/api/textmaker/gtavposter/?urlgbr=${anu.display_url}`)
+	 client.sendMessage(from, hehe, image, {quoted:mek})
+	} else {
+	  reply('marque uma foto')
+	}
+	break
+                 case 'abraço':
+                    if (!isGroup) return reply(ptbr.group())
+                    if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return 
+                    mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+                    pro = '.\n'
+                    for (let _ of mentioned) {
+                    pro += `@${_.split('@')[0]}\n`
+                    }
+                    yhb = `Que fofo... @${sender.split("@")[0]} deu um abraço apertado em @${mentioned[0].split('@')[0]}`
+                    mentions(yhb, yhb, true)
+                     break
 				case 'ssweb':
 				
 					if (args.length < 1) return reply('Cadê o url tio')
@@ -4077,7 +4088,35 @@ break
                       membr.push(gostosa12.jid)
                       mentions(teks, membr, true)
                        break
-					case 'amor':
+					case 'rola':
+                    case 'pau':
+                    random = `${Math.floor(Math.random() * 35)}`
+                    const tamanho = random
+                    //var (isNaN(tamanho))
+                    if (tamanho < 13 ) {pp = 'só a fimose'} else if (tamanho == 13 ) {pp = 'passou da média😳'} else if (tamanho == 14 ) {pp = 'passou da média😳'} else if (tamanho == 15 ) {pp = 'eita, vai pegar manga?'} else if (tamanho == 16 ) {pp = 'eita, vai pegar manga?'} else if (tamanho == 17 ) {pp = 'calma man, a mina não é um poço😳'} else if (tamanho == 18 ) {pp = 'calma man, a mina não é um poço😳'} else if (tamanho == 19 ) {pp = 'calma man, a mina não é um poço😳'} else if (tamanho == 20 ) {pp = 'você tem um poste no meio das pernas'} else if (tamanho == 21 ) {pp = 'você tem um poste no meio das pernas'} else if (tamanho == 22 ) {pp = 'você tem um poste no meio das pernas'} else if (tamanho == 23 ) {pp = 'você tem um poste no meio das pernas'} else if (tamanho == 24 ) {pp = 'você tem um poste no meio das pernas'} else if (tamanho > 25 ) {pp = 'vai procurar petróleo com isso?'
+                    }
+                    hasil = `Seu pau tem ${random}cm\n\n${pp}`
+                    reply(hasil)
+                    break
+				
+				case 'top5':
+                    try{
+                    if(!isGroup) return reply(ptbr.group())
+                    if (!isGroupAdmins)return reply(ptbr.admin())
+                    d = []
+                    top1 = body.slice(5)
+                    teks = `‍Top 5${top1}:\n`
+                    for(i = 0; i < 5; i++) {
+                    r = Math.floor(Math.random() * groupMetadata.participants.length + 0)
+                    teks += `‍❧ @${groupMembers[r].jid.split('@')[0]}\n`
+                    d.push(groupMembers[r].jid)
+                    }
+                    mentions(teks, d, true, {quoted: mek})
+                    } catch (e) {
+                    console.log(e)
+                    reply('ocorreu um erro')
+                    }
+                     breakcase 'amor':
                 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marque a pessoa')
 				mentidn = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
                 ghost = mek.participant
