@@ -16,8 +16,8 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}url2img*
 ║🌕*${prefix}attp*
 ║🌕*${prefix}gays*
-║🌕*${prefix}setprefix*
-║🌕*${prefix}simih [1/0]*
+║🌕*${prefix}pau*
+║🌕*${prefix}abraço*
 ║🌕*${prefix}marcar*
 ║🌕*${prefix}add [55]*
 ║🌕*${prefix}banir [@]*
