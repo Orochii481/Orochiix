@@ -3,29 +3,35 @@ const help1 = (prefix) => {
 	return `
 ┣━━━━°❀ ❬ *CRIAR* ❭ ❀°━━━━┓
 ┃
-┣⊱❥ *xd*
-┣⊱❥ *pinterest*
-┣⊱❥ *anjing*
-┣⊱❥ *loli2*
-┣⊱❥ *anime*
-┣⊱❥ *wolflogo2 <texto | texto>*
-┣⊱❥ *quotemaker <tx | wtrmk | tema>*
-┣⊱❥ *galaxtext*
-┣⊱❥ *textdark*
-┣⊱❥ *textblue*
-┣⊱❥ *lovemake*
-┣⊱❥ *stiltext*
-┣⊱❥ *ninjalogo*
-┣⊱❥ *party*
-┣⊱❥ *rtext*
-┣⊱❥ *water*
-┣⊱❥ *lionlogo <texto | texto>*
-┣⊱❥ *textscreen*
-┣⊱❥ *text3d*
-┣⊱❥ *epep*
-┣⊱❥ *marvelogo <texto | texto>*
-┣⊱❥ *snow <texto | texto>*
-┣⊱❥ *firetext*
+┣⊱❥ *cross-fire*
+┣⊱❥ *gtav*
+┣⊱❥ *logotop*
+┣⊱❥ *coffee-cup2*
+┣⊱❥ *shadow*
+┣⊱❥ *happy-birthday*
+┣⊱❥ *cemitery*
+┣⊱❥ *harry-potter*
+┣⊱❥ *wood-black*
+┣⊱❥ *chrome*
+┣⊱❥ *flaming*
+┣⊱❥ *puff*
+┣⊱❥ *dado3d*
+┣⊱❥ *vintage*
+┣⊱❥ *glowing3d*
+┣⊱❥ *camouflage*
+┣⊱❥ *rainbow-shine*
+┣⊱❥ *honey*
+┣⊱❥ *wolf-metal*
+┣⊱❥ *romantic*
+┣⊱❥ *cover*
+┣⊱❥ *smoke*
+┣⊱❥ *burn-papper*
+┣⊱❥ *naruto*
+┣⊱❥ *lovemsg*
+┣⊱❥ *megrass*
+┣⊱❥ *coffee-cup*
+┣⊱❥ *love-text*
+┣⊱❥ *butterfly*
 
 ════════════════════
 *Bills* 🤗
