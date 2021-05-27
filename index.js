@@ -4277,7 +4277,8 @@ break
                     console.log(e)
                     reply('ocorreu um erro')
                     }
-                     breakcase 'amor':
+                     break
+				case 'amor':
                 if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marque a pessoa')
 				mentidn = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
                 ghost = mek.participant
