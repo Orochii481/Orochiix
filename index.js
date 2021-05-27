@@ -3236,14 +3236,14 @@ break
 						})
 					})
 					break
-				case 'shadow': 
-				if (!isOwner) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply(mess.blank)
-					shad = body.slice(8)
-					reply(mess.wait)
-					ssha = await getBuffer(`https://api-anoncybfakeplayer.herokuapp.com/photooxy/shadowtext?text=${shad}`)
-					client.sendMessage(from, ssha, image, {caption: 'Nihkkkak', quoted: mek})
-					break
+				
+				
+					case 'shadow':
+                    teks = body.slice(7)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=shadow&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
 				case 'minion':
 				if (!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply(mess.blank)
@@ -4098,7 +4098,168 @@ break
                     hasil = `Seu pau tem ${random}cm\n\n${pp}`
                     reply(hasil)
                     break
-				
+				case 'cross-fire':
+                    teks = body.slice(11)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=cross-fire&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+				     case 'coffee-cup2':
+                    teks = body.slice(12)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=coffe2&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'happy-birthday':
+                    teks = body.slice(15)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=happy-birthday&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'cemitery':
+                    teks = body.slice(9)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=cemitery&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'harry-potter':
+                    teks = body.slice(13)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=harry-poter&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'wood-black':
+                    teks = body.slice(11)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=wood-black&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'chrome':
+                    teks = body.slice(7)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=chrome&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'flaming':
+                    teks = body.slice(8)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=flaming&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'puff':
+                    teks = body.slice(5)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=puff&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'dado3d':
+                    teks = body.slice(7)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=dado3d&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'vintage':
+                    teks = body.slice(8)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=vintage&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'glowing3d':
+                    teks = body.slice(10)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=glowing3d&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'camouflage':
+                    teks = body.slice(11)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=camouflage&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'rainbow-shine':
+                    teks = body.slice(14)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=rainbow-shine&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'honey':
+                    teks = body.slice(6)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=honey&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'ocean':
+                    teks = body.slice(6)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=ocean&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'wolf-metal':
+                    teks = body.slice(11)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=wolf-metal&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'romantic':
+                    teks = body.slice(9)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=romantic&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'cover':
+                    teks = body.slice(6)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=cover&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'smoke':
+                    teks = body.slice(6)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=smoke&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'burn-papper':
+                    teks = body.slice(12)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=burn-papper&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'naruto':
+                    teks = body.slice(7)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=naruto&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'lovemsg':
+                    teks = body.slice(8)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=lovemsg&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'megrass':
+                    teks = body.slice(8)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=megrass&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'coffee-cup':
+                    teks = body.slice(11)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=coffecup&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'love-text':
+                    teks = body.slice(10)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=lovetext&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break
+                    case 'butterfly':
+                    teks = body.slice(10)
+                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=butterfly&text=${teks}`)
+                    buffer = await getBuffer(post.result)
+                    client.sendMessage(from, buffer, image, {quoted: mek})
+                    break	
 				case 'top5':
                     try{
                     if(!isGroup) return reply(ptbr.group())
