@@ -313,7 +313,7 @@ async function starts() {
 			const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			const groupId = isGroup ? groupMetadata.jid : ''
 			const isGroupAdmins = groupAdmins.includes(sender) || false
-			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
+			const isLevelingOn = isGroup ? _leveling.includes(groupId) : true
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : true
             const isAntiLink = isGroup ? antilink.includes(from) : true
@@ -2207,7 +2207,7 @@ break
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (args[0] === 'on') {
                     if (isLevelingOn) return reply('*O comando de level já estava ativo*')
-                    _leveling.push(groupId)
+                    _leveling.push(from)
                     fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
 					} else if (args[0] === 'off') {
