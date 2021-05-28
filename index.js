@@ -316,7 +316,7 @@ async function starts() {
 			const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
 			const isWelkom = isGroup ? welkom.includes(from) : false
 			const isNsfw = isGroup ? nsfw.includes(from) : true
-            const isAntiLink = isGroup ? antilink.includes(from) : false
+            const isAntiLink = isGroup ? antilink.includes(from) : true
 	    	const isAnime = isGroup ? anime.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
@@ -749,8 +749,8 @@ if (text.includes("placa"))
 					 me=client.user 
 					  uptime=process.uptime 
                         client.sendMessage(from, help(pushname,prefix), text, {quoted: mek, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg","caption": "*Bills DOMINA *", 'jpegThumbnail': fs.readFileSync('./assets/naotirem.webp')}}}})
-				case 'menu':
-					client.sendMessage(from, help1(prefix), text)  
+				
+					
                  
 				
 					case 'kiss':
@@ -4098,24 +4098,15 @@ break
                     hasil = `Seu pau tem ${random}cm\n\n${pp}`
                     reply(hasil)
                     break
-				case 'cross-fire':
-                    teks = body.slice(11)
-                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=cross-fire&text=${teks}`)
-                    buffer = await getBuffer(post.result)
-                    client.sendMessage(from, buffer, image, {quoted: mek})
-                    break
-				     case 'coffee-cup2':
-                    teks = body.slice(12)
-                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=coffe2&text=${teks}`)
-                    buffer = await getBuffer(post.result)
-                    client.sendMessage(from, buffer, image, {quoted: mek})
-                    break
-                    case 'happy-birthday':
-                    teks = body.slice(15)
-                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=happy-birthday&text=${teks}`)
-                    buffer = await getBuffer(post.result)
-                    client.sendMessage(from, buffer, image, {quoted: mek})
-                    break
+				case 'nicks': 
+                 client.updatePresence(from, Presence.composing) 
+					data = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=italumaster`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `Nick: ${i}\n=================\n`
+					}
+					reply(teks.trim())
+					break
                     case 'cemitery':
                     teks = body.slice(9)
                     post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=cemitery&text=${teks}`)
