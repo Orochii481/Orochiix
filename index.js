@@ -2211,7 +2211,7 @@ break
                     fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
 					} else if (args[0] === 'off') {
-                    _leveling.splice(groupId, 1)
+                    _leveling.splice(from, 1)
                     fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
                      reply(mess.leveloff)
 					} else {
