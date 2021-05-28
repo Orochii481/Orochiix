@@ -2207,7 +2207,7 @@ break
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (args[0] === 'on') {
                     if (isLevelingOn) return reply('*O comando de level já estava ativo*')
-                    _leveling.push(from)
+                    _leveling.push(groupId)
                     fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
 					} else if (args[0] === 'off') {
