@@ -2525,7 +2525,7 @@ break
 				    client.sendMessage(from, insta, image, {quoted: mek})
 				    await limitAdd(sender) 
 				    break  
-				  //_JOGO DA VELHA By: Resen
+				 //_JOGO DA VELHA By: Resen
 //INICIO DO JOGO DA VELHA ❌ ⭕ 🔲
 case 'ttt':
 const limitrl = getLimit()
@@ -2538,7 +2538,7 @@ reply(`Alguém jogou recentemente\nPor favor aguarde o tempo de espera...`)
 } else if (args == 0 || (args != 'easy' && args != 'Easy' && args != 'EASY' && args != 'normal' && args != 'Normal' && args != 'NORMAL' && args != 'hard' && args != 'Hard' && args != 'HARD'&& args != 'impossible'&& args != 'Impossible' && args != 'IMPOSSIBLE')) {
 reply(`Defina a dificuldade\nEx.: ${prefix}ttt easy\n\nDificuldades: easy, normal, hard e impossible`)
 } else if (limitrl !== undefined && cdd - (Date.now() - limitrl) > 0) {
-reply('Opa, deixe seus abigos jogarem também, tente novamente em 8 minutos.')
+reply('Opa, deixe seus amigos jogarem também, tente novamente em 8 minutos.')
 } else {
 tttset.tttstatus = "on"
 tttset.player = sender
@@ -2736,9 +2736,9 @@ randomTTTXP = Math.floor(Math.random() * 1000) + 1000
 addLevelingXp(tttset.player, randomTTTXP)
 break
 }
-tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉\n\n➣  RECOMPENSA: +${randomTTTXP} XP 🔮`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉\n\n➣  RECOMPENSA: +${randomTTTXP} XP 🔮`, text)
 } else {
-tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉`, text)
 }
 const currentTTTwins = getTTTwins(tttset.player)
 const checkTTTIdWin = getTTTId(tttset.player)
@@ -2770,9 +2770,9 @@ randomTTTXP = 0
 addLevelingXp(tttset.player, randomTTTXP)
 break
 }	
-client.sendMessage(from, `🎉🎉 VITÓRIA DO Bills-BOT 🎉🎉\n\n➣  PUNIÇÃO: ${randomTTTXP} XP 🔮`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO TIRINGA-BOT 🎉🎉\n\n➣  PUNIÇÃO: ${randomTTTXP} XP 🔮`, text)
 } else {
-client.sendMessage(from, `🎉🎉 VITÓRIA DO Bills-BOT 🎉🎉`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO TIRINGA-BOT 🎉🎉`, text)
 }
 const currentTTTdefeats = getTTTdefeats(tttset.player)
 const checkTTTIdDefeat = getTTTId(tttset.player)
@@ -2786,9 +2786,9 @@ tttset.tttstatus = "off"
 tttset.waitingTime = "on"
 } else if (Tie()) {
 if (isLevelingOn) {
-tiringa.sendMessage(from, `🎉🎉 EMPATE 🎉🎉\n\n➣  NÃO HÁ GANHOS NEM PERDAS`, text)
+client.sendMessage(from, `🎉🎉 EMPATE 🎉🎉\n\n➣  NÃO HÁ GANHOS NEM PERDAS`, text)
 } else {
-tiringa.sendMessage(from, `🎉🎉 EMPATE 🎉🎉`, text)
+client.sendMessage(from, `🎉🎉 EMPATE 🎉🎉`, text)
 }
 const currentTTTties = getTTTties(tttset.player)
 const checkTTTIdTie = getTTTId(tttset.player)
