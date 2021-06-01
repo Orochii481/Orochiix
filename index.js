@@ -2525,12 +2525,12 @@ break
 				    client.sendMessage(from, insta, image, {quoted: mek})
 				    await limitAdd(sender) 
 				    break  
-				    //_JOGO DA VELHA By: Resen
+				  //_JOGO DA VELHA By: Resen
 //INICIO DO JOGO DA VELHA ❌ ⭕ 🔲
 case 'ttt':
-const limitrl = getLimit(sender, daily)
+const limitrl = getLimit()
 if (!isGroup) {
-reply(ptbr.group())
+senderreply(ptbr.group())
 } else if (tttset.tttstatus == "on") {
 reply(`Alguém já está jogando no momento\nPor favor aguarde um instante...`)
 } else if (tttset.waitingTime == "on") {
@@ -2566,7 +2566,7 @@ setTimeout( () => {
 tttset.waitingTime = "off"
 tttset.autoEndTime = "on"
 }, 240000) //4 minutos
-addLimit(sender, daily)
+addLimit(sender)
 }
 break
 
@@ -2736,9 +2736,9 @@ randomTTTXP = Math.floor(Math.random() * 1000) + 1000
 addLevelingXp(tttset.player, randomTTTXP)
 break
 }
-client.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉\n\n➣  RECOMPENSA: +${randomTTTXP} XP 🔮`, text)
+tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉\n\n➣  RECOMPENSA: +${randomTTTXP} XP 🔮`, text)
 } else {
-client.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉`, text)
+tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉`, text)
 }
 const currentTTTwins = getTTTwins(tttset.player)
 const checkTTTIdWin = getTTTId(tttset.player)
@@ -2786,9 +2786,9 @@ tttset.tttstatus = "off"
 tttset.waitingTime = "on"
 } else if (Tie()) {
 if (isLevelingOn) {
-client.sendMessage(from, `🎉🎉 EMPATE 🎉🎉\n\n➣  NÃO HÁ GANHOS NEM PERDAS`, text)
+tiringa.sendMessage(from, `🎉🎉 EMPATE 🎉🎉\n\n➣  NÃO HÁ GANHOS NEM PERDAS`, text)
 } else {
-client.sendMessage(from, `🎉🎉 EMPATE 🎉🎉`, text)
+tiringa.sendMessage(from, `🎉🎉 EMPATE 🎉🎉`, text)
 }
 const currentTTTties = getTTTties(tttset.player)
 const checkTTTIdTie = getTTTId(tttset.player)
