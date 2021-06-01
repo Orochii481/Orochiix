@@ -303,10 +303,10 @@ async function starts() {
 				}
 			}
 			const costum = (pesan, tipe, target, target2) => {
-                 tiringa.sendMessage(from, pesan, tipe, {quoted: {key: {fromMe: false, participant: `${target}`, ...(from ? {remoteJid: from}: {})}, message: {conversation: `${target2}` }}})
+                 client.sendMessage(from, pesan, tipe, {quoted: {key: {fromMe: false, participant: `${target}`, ...(from ? {remoteJid: from}: {})}, message: {conversation: `${target2}` }}})
             }
              const sendPtt = (teks) => {
-                 tiringa.sendMessage(from, audio, mp3, {quoted: mek })
+                 client.sendMessage(from, audio, mp3, {quoted: mek })
             }
 
 			const botNumber = client.user.jid
@@ -909,9 +909,9 @@ addLevelingXp(tttset.player, randomEndTTTXP)
 const checkTTTIdEnd = getTTTId(tttset.player)
 if (checkTTTIdEnd === undefined) addTTTId(tttset.player)
 addTTTpoints(tttset.player, randomEndTTTXP)
-tiringa.sendMessage(tttset.local,`❌ O TEMPO DE JOGO EXPIROU ❌\n\n➣  PUNIÇÃO: ${randomEndTTTXP} XP 🔮`, text, {quoted: tttset.mentionPlayer})
+client.sendMessage(tttset.local,`❌ O TEMPO DE JOGO EXPIROU ❌\n\n➣  PUNIÇÃO: ${randomEndTTTXP} XP 🔮`, text, {quoted: tttset.mentionPlayer})
 } else {
-tiringa.sendMessage(tttset.local,`❌ O TEMPO DE JOGO EXPIROU ❌`, text, {quoted: tttset.mentionPlayer})
+client.sendMessage(tttset.local,`❌ O TEMPO DE JOGO EXPIROU ❌`, text, {quoted: tttset.mentionPlayer})
 }
 esp.a1 = "🔲"; esp.a2 = "🔲"; esp.a3 = "🔲"
 esp.b1 = "🔲"; esp.b2 = "🔲"; esp.b3 = "🔲"
@@ -2560,8 +2560,8 @@ IA()
 tttset.reActivate1 = "on"	
 }
 costum(`O jogo começou!!!\nModo: ${tttset.tttdifficulty}`, text, tescuk, crtt)
-tiringa.sendMessage(from, `🌀1️⃣2️⃣3️⃣\n🅰️${esp.a1}${esp.a2}${esp.a3}\n🅱️${esp.b1}${esp.b2}${esp.b3}\n©️${esp.c1}${esp.c2}${esp.c3}`,text )
-tiringa.sendMessage(from,`Caso não saiba como jogar digite: ${prefix}ttthelp`, text) 
+client.sendMessage(from, `🌀1️⃣2️⃣3️⃣\n🅰️${esp.a1}${esp.a2}${esp.a3}\n🅱️${esp.b1}${esp.b2}${esp.b3}\n©️${esp.c1}${esp.c2}${esp.c3}`,text )
+client.sendMessage(from,`Caso não saiba como jogar digite: ${prefix}ttthelp`, text) 
 setTimeout( () => {
 tttset.waitingTime = "off"
 tttset.autoEndTime = "on"
@@ -2571,14 +2571,14 @@ addLimit(sender, daily)
 break
 
 case 'ttthelp':
-tiringa.sendMessage(from, ttthelp(prefix), text)
+client.sendMessage(from, ttthelp(prefix), text)
 break
 
 case 'tttme':
 if (!isGroup) return reply(ptbr.group())
 const checkTTTIdMe = getTTTId(sender)
 if (checkTTTIdMe === undefined) addTTTId(sender)
-tiringa.sendMessage(from, tttme(pushname, getTTTwins(sender), getTTTdefeats(sender), getTTTties(sender), getTTTpoints(sender)), text, {quoted:mek})
+client.sendMessage(from, tttme(pushname, getTTTwins(sender), getTTTdefeats(sender), getTTTties(sender), getTTTpoints(sender)), text, {quoted:mek})
 break
 
 case 'tttrank':
@@ -2598,7 +2598,7 @@ mentioned_jid.push(tictactoe[i].jid)
 mentions(board, mentioned_jid, true)
 } catch (err) {
 console.log(err)
-await tiringa.sendMessage(from, `Humm, é necessário que no mínimo 3 pessoas tenham jogado...`, text, {quoted: mek})
+await client.sendMessage(from, `Humm, é necessário que no mínimo 3 pessoas tenham jogado...`, text, {quoted: mek})
 }
 break
 
@@ -2736,9 +2736,9 @@ randomTTTXP = Math.floor(Math.random() * 1000) + 1000
 addLevelingXp(tttset.player, randomTTTXP)
 break
 }
-tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉\n\n➣  RECOMPENSA: +${randomTTTXP} XP 🔮`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉\n\n➣  RECOMPENSA: +${randomTTTXP} XP 🔮`, text)
 } else {
-tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO JOGADOR 🎉🎉`, text)
 }
 const currentTTTwins = getTTTwins(tttset.player)
 const checkTTTIdWin = getTTTId(tttset.player)
@@ -2770,9 +2770,9 @@ randomTTTXP = 0
 addLevelingXp(tttset.player, randomTTTXP)
 break
 }	
-tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO TIRINGA-BOT 🎉🎉\n\n➣  PUNIÇÃO: ${randomTTTXP} XP 🔮`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO Bills-BOT 🎉🎉\n\n➣  PUNIÇÃO: ${randomTTTXP} XP 🔮`, text)
 } else {
-tiringa.sendMessage(from, `🎉🎉 VITÓRIA DO TIRINGA-BOT 🎉🎉`, text)
+client.sendMessage(from, `🎉🎉 VITÓRIA DO Bills-BOT 🎉🎉`, text)
 }
 const currentTTTdefeats = getTTTdefeats(tttset.player)
 const checkTTTIdDefeat = getTTTId(tttset.player)
@@ -2786,9 +2786,9 @@ tttset.tttstatus = "off"
 tttset.waitingTime = "on"
 } else if (Tie()) {
 if (isLevelingOn) {
-tiringa.sendMessage(from, `🎉🎉 EMPATE 🎉🎉\n\n➣  NÃO HÁ GANHOS NEM PERDAS`, text)
+client.sendMessage(from, `🎉🎉 EMPATE 🎉🎉\n\n➣  NÃO HÁ GANHOS NEM PERDAS`, text)
 } else {
-tiringa.sendMessage(from, `🎉🎉 EMPATE 🎉🎉`, text)
+client.sendMessage(from, `🎉🎉 EMPATE 🎉🎉`, text)
 }
 const currentTTTties = getTTTties(tttset.player)
 const checkTTTIdTie = getTTTId(tttset.player)
