@@ -2236,10 +2236,27 @@ tttset.autoEndTime = "off"
 					client.sendMessage(from, pint, image, { caption: '*Google Image*\n\n*Resultado da pesquisa : '+goo+'*', quoted: mek })
 					break
 				case 'ban':
-					if (!isOwner) return reply(mess.only.ownerB)
-					client.banUser (`${body.slice(7)}@c.us`, "add")
-					client.sendMessage(from, `você foi banido ${body.slice(7)}@c.us`, text)
-					break
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você deseja chutar!')
+if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
+if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
+entah = mek.message.extendedTextMessage.contextInfo.mentionedJid
+if (exe1.length > 1) {
+var M_exe = []
+for (let cut of exe1) {
+M_exe.push(cut)
+}
+client.groupRemove(from, M_exe)
+} else {
+client.groupRemove(from, [exe1[0]])
+}
+} else {
+exe1 = mek.message.extendedTextMessage.contextInfo.participant
+client.groupRemove(from, [exe1])
+}
+break
 				case 'playstore':
 					kuji = body.slice(7)
 					reply(mess.wait)
