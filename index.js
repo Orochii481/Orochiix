@@ -4734,7 +4734,8 @@ break
 					break
 				case 'hidetag2':
 					if (!isGroup) return reply(mess.only.group)
-					if (!isadminbot) return reply('Quem é Você?')
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					var value = body.slice(9)
 					var group = await client.groupMetadata(from)
 					var member = group['participants']
