@@ -3133,7 +3133,7 @@ break
 				buff = await getBuffer(`https://api.arugaz.my.id/api/photooxy/text-on-burn-paper?text=${cpaper}`, {method: 'get'})
 				client.sendMessage(from, buff, image, {quoted: mek})
 				break 
-                                case 'antibucin':
+                                case 'antilink':
                     if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3141,14 +3141,14 @@ break
 					if (Number(args[0]) === 1) {
 						if (isantibucin) return reply('o anti-link está ativo')
 						antibucin.push(from)
-						fs.writeFileSync('./database/antibucin.json', JSON.stringify(antibucin))
+						fs.writeFileSync('./database/group/antibucin.json', JSON.stringify(antibucin))
 						reply('Grupo anti-link ativado com sucesso neste grupo ✔️')
 						client.sendMessage(from,`Atenção a todos os membros ativos deste grupo anti-link. se você enviar um link de grupo, voce sera expulso `, text)
 					} else if (Number(args[0]) === 0) {
 						if (!isantibucin) return reply('O modo de grupo anti-link foi desabilitado ')
 						var ini = anti.clientOf(from)
 						antibucin.splice(ini, 1)
-						fs.writeFileSync('./src/antilink.json', JSON.stringify(antibucin))
+						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antibucin))
 						reply('Desativar grupo anti-link com sucesso neste grupo ✔️')
 					} else {
 						reply('1 para ativar, 0 para desativar ')
