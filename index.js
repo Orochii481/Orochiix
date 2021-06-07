@@ -1236,7 +1236,7 @@ if (budy.includes("https://m.kwai.me/")){
 		}, 0)
 	}
 
-        if (budy.includes("💳")){
+        if (budy.includes("https:wa.me/")){
 		if (!isGroup) return
 		if (!isAntiBucin) return
 		if (isGroupAdmins) return reply('porque você é um administrador do grupo,  o bot  não vai te remover')
