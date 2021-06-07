@@ -25,8 +25,6 @@ const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRando
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
 const fs = require('fs') 
-const { addTTTId, addTTTwin, addTTTdefeat, addTTTtie, addTTTpoints, getTTTId, getTTTwins, getTTTdefeats, getTTTties, getTTTpoints } = require('./lib/tictactoe.js')
-const tictactoe = JSON.parse(fs.readFileSync('./database/ttt/tictactoe.json'));
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
