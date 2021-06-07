@@ -3139,13 +3139,13 @@ break
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (args.length < 1) return reply('digite 1 para ativar ')
 					if (Number(args[0]) === 1) {
-						if (isantibucin) return reply('o anti-link está ativo')
+						if (isAntiBucin) return reply('o anti-link está ativo')
 						antibucin.push(from)
 						fs.writeFileSync('./database/group/antibucin.json', JSON.stringify(antibucin))
 						reply('Grupo anti-link ativado com sucesso neste grupo ✔️')
 						client.sendMessage(from,`Atenção a todos os membros ativos deste grupo anti-link. se você enviar um link de grupo, voce sera expulso `, text)
 					} else if (Number(args[0]) === 0) {
-						if (!isantibucin) return reply('O modo de grupo anti-link foi desabilitado ')
+						if (!isAntiBucin) return reply('O modo de grupo anti-link foi desabilitado ')
 						var ini = anti.clientOf(from)
 						antibucin.splice(ini, 1)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antibucin))
