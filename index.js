@@ -3133,26 +3133,42 @@ break
 				buff = await getBuffer(`https://api.arugaz.my.id/api/photooxy/text-on-burn-paper?text=${cpaper}`, {method: 'get'})
 				client.sendMessage(from, buff, image, {quoted: mek})
 				break 
-                                case 'antilink':
-                    if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
+                               case 'antilink':
+
+                   	if (!isGroup) return reply(mess.only.group)
+
+					if (!isGroupAdmins && !isOwner) return reply(mess.only.admin)
+
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args.length < 1) return reply('digite 1 para ativar ')
+
+					if (args.length < 1) return reply('digite 1 para ativar')
+
 					if (Number(args[0]) === 1) {
-						if (isAntiBucin) return reply('o anti-link está ativo')
+
+						if (isAntiBucin) return reply('anti-link está ativo ')
+
 						antibucin.push(from)
+
 						fs.writeFileSync('./database/group/antibucin.json', JSON.stringify(antibucin))
-						reply('Grupo anti-link ativado com sucesso neste grupo ✔️')
-						client.sendMessage(from,`Atenção a todos os membros ativos deste grupo anti-link. se você enviar um link de grupo, voce sera expulso `, text)
+
+						
+
+						client.sendMessage(from,` Atenção a todos participante do grupo (ANTI-LINK) está ativo no grupo, qualquer tipo link sera banido do grupo!!! `, text)
+
 					} else if (Number(args[0]) === 0) {
-						if (!isAntiBucin) return reply('O modo de grupo anti-link foi desabilitado ')
-						var ini = anti.clientOf(from)
+
+						if (!isAntiBucin) return reply('O modo Anti-Link foi desativado')
+						var ini = antibucin.indexOf(from) 						
 						antibucin.splice(ini, 1)
-						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antibucin))
-						reply('Desativar grupo anti-link com sucesso neste grupo ✔️')
+						fs.writeFileSync('./database/group/antibucin.json', JSON.stringify(antibucin))
+                                                reply('Desativando anti-link com sucesso neste grupo ✔️')
+
 					} else {
-						reply('1 para ativar, 0 para desativar ')
+
+						reply('1 para ativar, 0 para desativar')
+
 					}
+
 					break
 				case 'cgame':
 
