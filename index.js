@@ -1086,47 +1086,30 @@ tttset.autoEndTime = "off"
 	
 	       /** FUNCTION ANTI BUCIN **/
 
-       	if (budy.includes("puxa")){
+       	if (budy.includes(".com")){
 		if (!isGroup) return
 		if (!isAntiBucin) return
 		if (isGroupAdmins) return reply('porque você é o administrador do grupo, o bot não vai remover')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 PUXAR DADOS 」\n${sender.split("@")[0]} ME DESCULPA , VOCE FOI ESPULSO USAR ESSA PALAVRAS*`)
+		reply(`「 SEM LINKS」\n${sender.split("@")[0]} ME DESCULPA , VOCE FOI ESPULSO *`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
 		setTimeout( () => {
 			client.updatePresence(from, Presence.composing)
-		reply("Adeus Spammer.")
+		reply("Adeus.")
 		}, 0)
 	}
- if (budy.includes("Pix")){
+ if (budy.includes("https://")){
 		if (!isGroup) return
 		if (!isAntiBucin) return
 	if (isGroupAdmins) return reply('Você é administrador do grupo.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 GOLPISTA FILHO DA PUTA 」\n${sender.split("@")[0]} VAI DAR GOLPE NO INFERNO CORNO MALDITO`)
-		setTimeout( () => {
-			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
-		}, 1000)
-		setTimeout( () => {
-			client.updatePresence(from, Presence.composing)
-
-		}, 0)
-	}
-			
-        if (budy.includes("pix")){
-		if (!isGroup) return
-		if (!isAntiBucin) return
-	if (isGroupAdmins) return reply('Você é administrador do grupo.')
-		client.updatePresence(from, Presence.composing)
-		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
-		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 GOLPISTA FILHO DA PUTA 」\n${sender.split("@")[0]} VAI DAR GOLPE NO INFERNO CORNO MALDITO`)
+		reply(`「 LINK 」\n${sender.split("@")[0]} BANIDO`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
@@ -1136,15 +1119,32 @@ tttset.autoEndTime = "off"
 		}, 0)
 	}
 			
-			
-			if (budy.includes("Pix🤑")){
+        if (budy.includes("https//www.istagram.com")){
 		if (!isGroup) return
 		if (!isAntiBucin) return
 	if (isGroupAdmins) return reply('Você é administrador do grupo.')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 GOLPISTA FILHO DA PUTA 」\n${sender.split("@")[0]} VAI DAR GOLPE NO INFERNO CORNO MALDITO`)
+		reply(`「 INSTA? 」\n${sender.split("@")[0]} BANIDO`)
+		setTimeout( () => {
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
+		}, 1000)
+		setTimeout( () => {
+			client.updatePresence(from, Presence.composing)
+
+		}, 0)
+	}
+			
+			
+			if (budy.includes("https://vm.tiktok.com")){
+		if (!isGroup) return
+		if (!isAntiBucin) return
+	if (isGroupAdmins) return reply('Você é administrador do grupo.')
+		client.updatePresence(from, Presence.composing)
+		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
+		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
+		reply(`「 TIKTOK DETECTADO 」\n${sender.split("@")[0]} BANIDO KKKKKKK`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
@@ -1160,7 +1160,7 @@ tttset.autoEndTime = "off"
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 SPAM DETECTADO 」\n${sender.split("@")[0]} voce sera expulso*`)
+		reply(`「 HMM FOI AVISADO 」\n${sender.split("@")[0]} voce sera expulso*`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
@@ -1192,7 +1192,7 @@ if (budy.includes("https://m.kwai.me/")){
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 SPAM DETECTADO 」\n${sender.split("@")[0]} vou remover por postar links kwai *`)
+		reply(`「 KWAI DETECTADO 」\n${sender.split("@")[0]} vou remover por postar links kwai *`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
@@ -1219,14 +1219,14 @@ if (budy.includes("https://m.kwai.me/")){
 			}
 		
 
-        if (budy.includes("💸")){
+        if (budy.includes("https://www.mediafire")){
 		if (!isGroup) return
 		if (!isAntiBucin) return
 		if (isGroupAdmins) return reply('porque você é um administrador do grupo,  o bot  não vai te remover')
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 SPAM DETECTADO」\n${sender.split("@")[0]} Este símbolo representa spam*`)
+		reply(`「 LINK DETECTADO」\n${sender.split("@")[0]} BANIDO*`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
@@ -1243,7 +1243,7 @@ if (budy.includes("https://m.kwai.me/")){
 		client.updatePresence(from, Presence.composing)
 		if (messagesC.includes("#harusizintod")) return reply("izin diterima")
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-		reply(`「 SPAM DETECTADO 」\n${sender.split("@")[0]} você se deu mal nessa Adeus *`)
+		reply(`「 LINK DETECTADO 」\n${sender.split("@")[0]} você se deu mal nessa Adeus *`)
 		setTimeout( () => {
 			client.groupRemove(from, [kic]).catch((e)=>{reply(`ERR: ${e}`)})
 		}, 1000)
@@ -1265,7 +1265,7 @@ if (budy.includes("https://m.kwai.me/")){
 	
 		if (messagesC.includes("tmnc")){
 			client.updatePresence(from, Presence.composing)
-			reply("vai vc, tu ja me disse q é mo bom")
+			reply("Tmnc é q nem vitamina como tua irmã e tua tia")
 	}
 	
 		if (messagesC.includes("vsfd")){
