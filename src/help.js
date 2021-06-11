@@ -4,6 +4,8 @@ const help = (pushname, prefix) => {
 
 ──────❶*Bills BOT*❷───────
 (っ◕‿◕)っ Olá ${pushname}
+Bem Vindo ao Bot da WOLF
+Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
 ┌─────────❶.❷────────
 ║
 ╠══〘 MENU 〙══
@@ -11,7 +13,6 @@ const help = (pushname, prefix) => {
 ║🌕*${prefix}figu*
 ║🌕*${prefix}memeindo*
 ║🌕*${prefix}tts*
-║🌕*${prefix}ttt(jogo da velha)*
 ║🌕*${prefix}gostosa*
 ║🌕*${prefix}url2img*
 ║🌕*${prefix}attp*
@@ -79,23 +80,18 @@ const help = (pushname, prefix) => {
 ║
 ╠══〘 MAIS ALGUNS 〙══
 ║
-║🌕 */neko*
-║🌕 */ttp [texto]*
-║🌕 */testime*
-║🌕 */tomp3*
-║🌕 */modoanime [on/off]*
-║🌕 */modonsfw [on/off]*
-║🌕 */happymod [jogo/app]*
-║🌕 */rize*
-║🌕 */ytsearch*
-║🌕 */moddroid [jogo/app]*
-║🌕 */nomegp*
-║🌕 */darkjokes (memes aleatórios)*
-║🌕 */animecry*
-║🌕 */gay1*
-║🌕 */next*
-║🌕 */alerta*
-║🌕 */analise*
+║🌕 *${prefix}neko*
+║🌕 *${prefix}ttp [texto]*
+║🌕 *${prefix}testime*
+║🌕 *${prefix}tomp3*
+║🌕 *${prefix}ytsearch*
+║🌕 *${prefix}moddroid [jogo/app]*
+║🌕 *${prefix}nomegp*
+║🌕 *${prefix}darkjokes (memes aleatórios)*
+║🌕 *${prefix}animecry*
+║🌕 *${prefix}gay1*
+║🌕 *${prefix}alerta*
+║🌕 *${prefix}analise*
 ║
 ╠══〘 Premium 〙══
 ║
@@ -121,12 +117,12 @@ const help = (pushname, prefix) => {
 ║🌕 *grita*
 ║🌕 *musica*
 ║🌕 *fds*
+║🌕 *Sexo*
 ║
 ╠══〘 Bills Bot 〙══
 ║
-║ *NOME: Orochii,Killua*
-║ *WPP Orochii: wa.me/+5511952761206*
-║ *WPP Killua: wa.me/+5511974023872
+║ *NOME: 𝐖𝐎𝐋𝐅 || ✞ঔৣ۝𝔒𝔯𝔬𝔠𝔥𝔦𝔦۝ঔৣ✞,*
+║ *WPP 𝐖𝐎𝐋𝐅 || ✞ঔৣ۝𝔒𝔯𝔬𝔠𝔥𝔦𝔦۝ঔৣ✞: wa.me/+5511952761206*
 ║  
 ║
 ╚═〘 Bills 〙`
