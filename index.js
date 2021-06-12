@@ -1320,7 +1320,7 @@ if (budy.includes("https://m.kwai.me/")){
 	
 			if (messagesC.includes("yamete")){
 			client.updatePresence(from, Presence.composing)
-			tujuh = fs.readFileSync('./assets/yamete.mp3');
+			tujuh = fs.readFileSync('./assets/yamete.ogg');
             client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
 	}
 	
