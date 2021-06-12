@@ -1630,27 +1630,19 @@ if (budy.includes("https://m.kwai.me/")){
 					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
 					await limitAdd(sender) 
 					break  
-				case 'encoctal':
+				case 'play5':
+teks = body.slice(6)
+musica = await fetchJson(`https://api-gdr2.herokuapp.com/api/ytplay?q=${teks}`)
+buffer1 = await getBuffer(musica.result.thumb)
+buffer2 = await getBuffer(musica.result.dl_link)
+teks =`𝚈𝚘𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌
 
-				encoc = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/octal/?encode=${encoc}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender)
-					break  
-				case 'decoctal':
+𝚄𝚜𝚞𝚊́𝚛𝚒𝚘 ${pushname}
 
-				decoc = `${body.slice(10)}`
-					anu = await fetchJson(`https://api.anoncybfakeplayer.com/api/octal/?decode=${decoc}`, {method: 'get'})
-					frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-					await limitAdd(sender) 
-					break  
-				case 'becrypt':
-
-				becry = `${body.slice(10)}`
-				anu = await fetchJson(`https://api.i-tech.id/hash/bcrypt?key=${TechApi}&string=${becry}`, {method: 'get'})
-				frhan.sendMessage(from, `${anu.result}`, text, {quoted: mek})
-				await limitAdd(sender) 
-				break 
+𝚝𝚒𝚝𝚞𝚕𝚘 ${musica.result.title}`
+client.sendMessage(from, buffer1, image, {quoted: mek, caption: teks })
+client.sendMessage(from, buffer2, audio, {quoted: mek})
+break
 					case 'hashidentifier':
 
 					  hash = `${body.slice(16)}`
