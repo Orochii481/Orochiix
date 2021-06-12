@@ -4149,36 +4149,20 @@ break
 					break
 				
 				
-					case 'shadow':
-                    teks = body.slice(7)
-                    post = await fetchJson(`https://api-exteam.herokuapp.com/api/photooxy?tema=shadow&text=${teks}`)
-                    buffer = await getBuffer(post.result)
-                    client.sendMessage(from, buffer, image, {quoted: mek})
-                    break
-				case 'minion':
-				if (!isOwner) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply(mess.blank)
-					minio = body.slice(8)
-					reply(mess.wait)
-					minn = await getBuffer(`https://api-anoncybfakeplayer.herokuapp.com/textpro/miniontext?text=${minio}`)
-					client.sendMessage(from, minn, image, {caption: 'Nihhjmmak', quoted: mek})
+				case 'banuser':
+				 client.updatePresence(from, Presence.composing) 
+				 client.chatRead (from)
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply(mess.only.ownerB)
+					client.blockUser (`${body.slice(7)}@c.us`, "add")
+					client.sendMessage(from, `perintah Diterima, memblokir ${body.slice(7)}@c.us`, text)
 					break
-				case 'neon':
-				if (!isOwner) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply(mess.blank)
-					nneoo = body.slice(6)
-					reply(mess.wait)
-					nooe = await getBuffer(`https://api-anoncybfakeplayer.herokuapp.com/textpro/neontext?text=${nneoo}`)
-					client.sendMessage(from, nooe, image, {caption: 'Nihjjkkak', quoted: mek})
-					break
-				case 'neongreen': 
-				if (!isOwner) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply(mess.blank)
-					grre = body.slice(11)
-					reply(mess.wait)
-					gree = await getBuffer(`https://api-anoncybfakeplayer.herokuapp.com/textpro/greenneontext?text=${grre}`)
-					client.sendMessage(from, gree, image, {caption: 'Njkkkak', quoted: mek})
-					break
+					case 'desbanuser':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply(mess.only.ownerB)
+				    client.blockUser (`${body.slice(9)}@c.us`, "remove")
+					client.sendMessage(from, `perintah Diterima, membuka blokir ${body.slice(9)}@c.us`, text)
+				    break
 				case 'neon2':
 				if (!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply(mess.blank)
