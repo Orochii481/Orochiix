@@ -1890,7 +1890,8 @@ break
 				case 'naruto':
 
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=Naruto`, {method: 'get'})
+					anu = await fetchJson(`
+					`, {method: 'get'})
 					naru = JSON.parse(JSON.stringify(anu));
 					to =  naru[Math.floor(Math.random() * naru.length)];
 					nye = await getBuffer(to)
