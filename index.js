@@ -1482,55 +1482,19 @@ break
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case 'ytsearch':
-					if (args.length < 1) return reply('Yang mau di cari apa?')
-					reply(mess.wait)
-					anu = await fetchJson(`https://api.arugaz.my.id/api/media/ytsearch?query=${body.slice(10)}`, {method: 'get'})
-					if (anu.error) return reply(anu.error)
-					teks = '=================\n'
-					for (let i of anu.result) {
-						teks += `\`\`\`Título\`\`\` : *${i.title}*\n\`\`\`Link\`\`\` : *https://youtu.be/${i.id}*\n\`\`\`Publicados\`\`\` : *${i.uploadDate}*\n\`\`\`Duração\`\`\` : *${i.duration}*\n\`\`\`Visualizadores: \`\`\`*${h2k(i.viewCount)}*\n\`\`\`Canal:\`\`\` *${i.channel.name}*\n=================\n`
-					}
-					reply(teks.trim())
-					await limitAdd(sender) 
-					break 
-				case 'textdark':
-					if (args.length < 1) return reply(mess.blank)
-					tels = body.slice(9)
-					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
-					reply(mess.wait)
-					anu = await fetchJson(`http://melodicxt.herokuapp.com/api/txtcustom?theme=metal_dark_gold&text=${tels}&apiKey=administrator`, {method: 'get'})
-					buff = await getBuffer(anu.result)
-					client.sendMessage(from, buff, image, {quoted: mek})
-					break
-				case 'textblue':
-					if (args.length < 1) return reply(mess.blank)
-					tels = body.slice(9)
-					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
-					reply(mess.wait)
-					anu = await fetchJson(`http://melodicxt.herokuapp.com/api/txtcustom?theme=blue_metal&text=${tels}&apiKey=administrator`, {method: 'get'})
-					buff = await getBuffer(anu.result)
-					client.sendMessage(from, buff, image, {quoted: mek})
-					break
-					case 'vipmenu':
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *#daftarvip* para comprar acesso Premium!' ,text, { quoted: mek })
-					client.sendMessage(from, vipmenu(prefix) , text, { quoted: mek })
-					break
-					case 'outros':
-					client.sendMessage(from, outros(prefix) , text, { quoted: mek })
-					break
-					case 'menu2':
-					client.sendMessage(from, menu2(prefix) , text, { quoted: mek })
-					break
-				case 'textsky':
-					if (args.length < 1) return reply(mess.blank)
-					tels = body.slice(9)
-					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
-					reply(mess.wait)
-					anu = await fetchJson(`https://hujanapi.herokuapp.com/api/sky_online?text=${tels}&apiKey=freetrial`, {method: 'get'})
-					buff = await getBuffer(anu.result.result)
-					client.sendMessage(from, buff, image, {quoted: mek})
-					break
+				case 'play6':
+teks = body.slice(6)
+musica = await fetchJson(`https://api-gdr2.herokuapp.com/api/ytplay?q=${teks}`)
+buffer1 = await getBuffer(musica.result.thumb)
+buffer2 = await getBuffer(musica.result.dl_link)
+teks =`𝚈𝚘𝚝𝚞𝚋𝚎 𝙿𝚕𝚊𝚢 𝙼𝚞𝚜𝚒𝚌
+
+𝚄𝚜𝚞𝚊́𝚛𝚒𝚘 ${pushname}
+
+𝚝𝚒𝚝𝚞𝚕𝚘 ${musica.result.title}`
+client.sendMessage(from, buffer1, image, {quoted: mek, caption: teks })
+client.sendMessage(from, luki, audio, {mimetype: 'audio/mp4', filename: `${luki.title}.mp3`, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": `Música ${musica.result.title} `, "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": await getBuffer(musica.result.thumb)}}}})         
+break
 				case 'rize':
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+rize`, {method: 'get'})
