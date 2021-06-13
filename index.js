@@ -2982,7 +2982,7 @@ break
 					break
 				case 'kurumi':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+karumi`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=Kurumi`, {method: 'get'})
 					kur = JSON.parse(JSON.stringify(anu));
 					imi =  kur[Math.floor(Math.random() * kur.length)];
 					nye = await getBuffer(imi)
@@ -2991,7 +2991,7 @@ break
 					break 
 				case 'miku':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+miku`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=miku`, {method: 'get'})
 					mi = JSON.parse(JSON.stringify(anu));
 					ku =  mi[Math.floor(Math.random() * mi.length)];
 					nye = await getBuffer(ku)
@@ -3062,7 +3062,7 @@ break
                    break 
 				case 'akira':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+akira`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=akira`, {method: 'get'})
 					ak = JSON.parse(JSON.stringify(anu));
 					ara =  ak[Math.floor(Math.random() * ak.length)];
 					nye = await getBuffer(ara)
@@ -3071,7 +3071,7 @@ break
 					break 
 				case 'itori':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+itori`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=itori`, {method: 'get'})
 					it = JSON.parse(JSON.stringify(anu));
 					ori =  it[Math.floor(Math.random() * it.length)];
 					nye = await getBuffer(ori)
@@ -3080,7 +3080,7 @@ break
 					break 
 				case 'kurumi':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+karumi`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=kurumi`, {method: 'get'})
 					kur = JSON.parse(JSON.stringify(anu));
 					imi =  kur[Math.floor(Math.random() * kur.length)];
 					nye = await getBuffer(imi)
@@ -3089,7 +3089,7 @@ break
 					break 
 				case 'miku':
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anime+miku`, {method: 'get'})
+					anu = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=miku`, {method: 'get'})
 					mi = JSON.parse(JSON.stringify(anu));
 					ku =  mi[Math.floor(Math.random() * mi.length)];
 					nye = await getBuffer(ku)
