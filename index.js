@@ -1882,7 +1882,7 @@ break
                 case 'pinterest':
                     tels = body.slice(11)
 					client.updatePresence(from, Presence.composing) 
-					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=${tels}`, {method: 'get'})
+					data = await fetchJson(`https://fdciabdul.tech/api/pinterest?keyword=pinterest`, {method: 'get'})
 					reply(mess.wait)
 					n = JSON.parse(JSON.stringify(data));
 					nimek =  n[Math.floor(Math.random() * n.length)];
