@@ -64,7 +64,7 @@ Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
 ║🌕*${prefix}bomdia*
 ║🌕*${prefix}boatarde*
 ║🌕*${prefix}boanoite*
-║🌕*${prefix}setdesc*
+║🌕*${prefix}antifake*
 ║
 ╠══〘 ESPECIFICO DO BOT 〙══
 ║
