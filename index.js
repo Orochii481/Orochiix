@@ -28,6 +28,7 @@ const fs = require('fs')
 const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
 const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
 const moment = require('moment-timezone')
+const antifake = JSON.parse(fs.readFileSync('./src/antifake.json'))
 const { exec } = require('child_process')
 const kagApi = require('@kagchi/kag-api')
 const fetch = require('node-fetch')
@@ -69,7 +70,6 @@ const antibucin = JSON.parse(fs.readFileSync('./database/group/antibucin.json'))
 const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
 const _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
 const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
-const antifake = JSON.parse(fs.readFileSync('./src/antifake.json'))
 /*********** END LOAD ***********/
 
 /********** FUNCTION ***************/
