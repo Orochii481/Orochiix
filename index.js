@@ -1049,18 +1049,17 @@ if (budy.includes("https://m.kwai.me/")){
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp3', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 				case 'antifake':
-					try {
-					if (!isGroup) return reply(mess.only.group)
+				if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
 						if (isAntiFake) return reply('Ja esta ativo')
 						antifake.push(from)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
+						fs.writeFileSync('./database/group/antifake.json', JSON.stringify(antifake))
 						reply('Ativou com sucesso o recurso de antifake neste grupo✔️')
 					} else if (Number(args[0]) === 0) {
 						antifake.splice(from, 1)
-						fs.writeFileSync('./src/antifake.json', JSON.stringify(antifake))
+						fs.writeFileSync('./database/group/antifake.json', JSON.stringify(antifake))
 						reply('Desativou com sucesso o recurso de antifake neste grupo✔️')
 					} else {
 						reply('1 para ativar, 0 para desativar')
