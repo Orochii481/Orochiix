@@ -1049,7 +1049,8 @@ if (budy.includes("https://m.kwai.me/")){
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp3', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 				case 'antifake':
-				if (!isGroup) return reply(mess.only.group)
+					try {
+					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
 					if (Number(args[0]) === 1) {
