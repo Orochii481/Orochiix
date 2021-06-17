@@ -11,10 +11,10 @@ Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
 ╠══〘 MENU 〙══
 ║
 ║🌕*${prefix}figu*
-║🌕*${prefix}memeindo*
+║🌕*${prefix}sorteio*
 ║🌕*${prefix}tts*
 ║🌕*${prefix}gostosa*
-║🌕*${prefix}url2img*
+║🌕*${prefix}nicks*
 ║🌕*${prefix}attp*
 ║🌕*${prefix}gays*
 ║🌕*${prefix}pau*
@@ -40,7 +40,7 @@ Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
 ║🌕*${prefix}roleta*
 ║🌕*${prefix}setfoto*
 ║🌕*${prefix}infogp*
-║🌕*${prefix}ytmp4*
+║🌕*${prefix}gerarnick*
 ║🌕*${prefix}bomdia*
 ║🌕*${prefix}boanoite*
 ║🌕*${prefix}punheteiros*
@@ -80,7 +80,6 @@ Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
 ║
 ╠══〘 MAIS ALGUNS 〙══
 ║
-║🌕 *${prefix}neko*
 ║🌕 *${prefix}ttp [texto]*
 ║🌕 *${prefix}testime*
 ║🌕 *${prefix}tomp3*
