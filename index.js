@@ -209,10 +209,10 @@ async function starts() {
 	await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
 	
-	
+	client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
 		try {
-			const mdata = await client.groupMetadata(anu.jid)
+		const mdata = await client.groupMetadata(anu.jid)
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0]
@@ -240,6 +240,7 @@ async function starts() {
 			console.log('Error : %s', color(e, 'red'))
 		}
 	})
+
 
 	client.on('CB:Blocklist', json => {
             if (blocked.length > 2) return
