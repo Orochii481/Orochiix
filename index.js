@@ -325,7 +325,6 @@ async function starts() {
 			const isNsfw = isGroup ? nsfw.includes(from) : true
           const isAntiBucin = isGroup ? antibucin.includes(from) : false
 	    	const isAnime = isGroup ? anime.includes(from) : false
-		const isAntiFake = isGroup ? antifake.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPremium = premium.includes(sender)
