@@ -4,8 +4,7 @@ const help = (pushname, prefix) => {
 
 ──────❶*Bills BOT*❷───────
 (っ◕‿◕)っ Olá ${pushname}
-Bem Vindo ao Bot da WOLF
-Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
+Bem Vindo ao bot do Orochii
 ┌─────────❶.❷────────
 ║
 ╠══〘 MENU 〙══
@@ -120,8 +119,8 @@ Lider:×᷼×🔥𝐀𝐋𝐅𝐀×᷼×𝐋𝐔𝐏𝐈𝐍×᷼×
 ║
 ╠══〘 Bills Bot 〙══
 ║
-║ *NOME: 𝐖𝐎𝐋𝐅 || ✞ঔৣ۝𝔒𝔯𝔬𝔠𝔥𝔦𝔦۝ঔৣ✞,*
-║ *WPP 𝐖𝐎𝐋𝐅 || ✞ঔৣ۝𝔒𝔯𝔬𝔠𝔥𝔦𝔦۝ঔৣ✞: wa.me/+5511952761206*
+║ *NOME: 𝔒𝔯𝔬𝔠𝔥𝔦𝔦*
+║ *WPP 𝔒𝔯𝔬𝔠𝔥𝔦𝔦: wa.me/+5511952761206*
 ║
 ║
 ║
